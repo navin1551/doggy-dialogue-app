@@ -1,0 +1,15 @@
+.login-form {
+  border: 1px solid black;
+  text-align: right;
+}
+
+#user-name,
+#password {
+  border: 1px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.login-button {
+  border: 1px solid black;
+}

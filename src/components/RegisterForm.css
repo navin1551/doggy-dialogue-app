@@ -1,0 +1,12 @@
+.registration-form {
+  border: 1px solid black;
+  text-align: center;
+}
+
+input {
+  border: 1px solid black;
+}
+
+.sign-up-button {
+  border: 1px solid black;
+}
