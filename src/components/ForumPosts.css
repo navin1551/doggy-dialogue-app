@@ -1,0 +1,27 @@
+.forum-posts-doggy-picture-area {
+  border: 1px solid black;
+  height: 100px;
+}
+
+.forum-posts-headers {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 30px;
+  margin-top: 21%;
+}
+
+#last-post {
+  margin-left: 40%;
+}
+
+#thread {
+  margin-left: 5px;
+}
+
+#thread,
+#last-post,
+#replies {
+  font-size: 10px;
+  font-weight: bold;
+}
