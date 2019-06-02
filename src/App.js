@@ -5,8 +5,12 @@ import AboutUs from "./components/AboutUs";
 import Register from "./components/Register";
 import Footer from "./components/Footer";
 import Forums from "./components/Forums";
+import Store from "./Store";
 
 export default class App extends React.Component {
+  state = {
+    posts: Store
+  };
   render() {
     return (
       <div className="app">
