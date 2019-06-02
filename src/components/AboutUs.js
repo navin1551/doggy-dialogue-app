@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
 export default class AboutUs extends React.Component {
   render() {
     return (
       <div className="about-us-area">
-        <h3 className="about-us-header">About Us</h3>
+        <h2 className="about-us-header">About Us</h2>
         <p>
           Who are we at Doggy Dialogue? We are a group of people who love our
           furry four legged friends and want to establish an active community of
@@ -22,7 +23,9 @@ export default class AboutUs extends React.Component {
           hooman might experience.
         </p>
 
-        <h2 className="sign-up-span">Sign up ***HERE***</h2>
+        <Link to={"/register"}>
+          <h3 className="sign-up-span">Sign up HERE</h3>
+        </Link>
       </div>
     );
   }

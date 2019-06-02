@@ -1,4 +1,8 @@
 .doggy-dialogue-header {
   border: 1px solid black;
-  height: 180px;
+  height: 190px;
+}
+
+#doggy-dialogue {
+  font-size: 33px;
 }

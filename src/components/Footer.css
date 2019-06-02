@@ -1,0 +1,11 @@
+.footer-area {
+  border: 1px solid black;
+  margin-top: 100%;
+  font-size: 10px;
+  text-align: right;
+  height: 20px;
+}
+
+#nk {
+  margin-right: 5px;
+}
