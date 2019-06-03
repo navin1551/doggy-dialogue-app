@@ -6,7 +6,7 @@ export default class Forums extends React.Component {
   render() {
     return (
       <div>
-        <div className="doggy-picture-area">
+        <div className="forums-header-area">
           <h2>Forums</h2>
         </div>
         <div className="forum-headers">

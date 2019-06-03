@@ -1,0 +1,18 @@
+.new-post-header-area {
+  border: 1px solid black;
+  height: 100px;
+  text-align: center;
+}
+
+.forum-input {
+  border: 1px solid black;
+}
+
+.new-post-form {
+  text-align: center;
+}
+
+#new-post-button {
+  border: 1px solid black;
+  margin-top: 15px;
+}
