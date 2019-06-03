@@ -11,12 +11,12 @@ import DoggyContext from "./DoggyContext";
 
 export default class App extends React.Component {
   state = {
-    store: Store
+    posts: Store
   };
 
   render() {
     const contextValue = {
-      store: this.state.store
+      posts: this.state.posts
     };
     return (
       <DoggyContext.Provider value={contextValue}>

@@ -1,6 +1,11 @@
-.about-us-area {
+/*.about-us-area {
   margin-left: 7px;
   margin-right: 7px;
+}*/
+
+.about-us-header-area {
+  border: 1px solid black;
+  height: 100px;
 }
 
 .about-us-header {

@@ -6,7 +6,9 @@ export default class Register extends React.Component {
   render() {
     return (
       <div className="register-area">
-        <h2 className="register-header">Sign up for full doggy access!</h2>
+        <div className="register-header-area">
+          <h2 className="register-header">Sign up for full doggy access!</h2>
+        </div>
         <RegisterForm />
         <p>
           By hitting the sign up button you agree to all terms and agreements of
