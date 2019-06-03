@@ -6,11 +6,28 @@ import Post from "./Post";
 export default class ForumPosts extends React.Component {
   static contextType = DoggyContext;
   render() {
-    const { posts } = this.context.posts;
+    let forumId = parseInt(this.props.match.params.folderId);
+
+    let forumPosts = this.props.match.params.hasOwnProperty("folderId")
+      ? this.context.store.posts.map(post => {
+          if (post.forumId === forumId) {
+            return (
+              <Post
+                key={post.id}
+                id={post.id}
+                title={post.title}
+                question={post.question}
+              />
+            );
+          }
+          return null;
+        })
+      : null;
+
     return (
       <div className="forum-posts-doggy-picture-area">
         <div>
-          <h2>Doggy Pics!!!</h2>
+          <h2>Forum Posts</h2>
         </div>
         <div className="forum-posts-headers">
           <p id="thread">Thread</p>
@@ -19,11 +36,7 @@ export default class ForumPosts extends React.Component {
         </div>
         <div>
           <ul>
-            {posts.map(post => (
-              <li id={post.id} key={post.id}>
-                <Post id={post.id} title={post.title} />
-              </li>
-            ))}
+            <li>{forumPosts}</li>
           </ul>
         </div>
       </div>

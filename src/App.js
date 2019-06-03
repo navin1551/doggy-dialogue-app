@@ -6,17 +6,18 @@ import Register from "./components/Register";
 import Footer from "./components/Footer";
 import Forums from "./components/Forums";
 import ForumPosts from "./components/ForumPosts";
+import UserPost from "./components/UserPost";
 import Store from "./Store";
 import DoggyContext from "./DoggyContext";
 
 export default class App extends React.Component {
   state = {
-    posts: Store
+    store: Store
   };
 
   render() {
     const contextValue = {
-      posts: this.state.posts
+      store: this.state.store
     };
     return (
       <DoggyContext.Provider value={contextValue}>
@@ -30,6 +31,7 @@ export default class App extends React.Component {
               <Route path="/register" component={Register} />
               <Route exact path="/forums" component={Forums} />
               <Route path="/forums/:folderId" component={ForumPosts} />
+              <Route path="/post/:postId" component={UserPost} />
             </Switch>
           </main>
           <section>
