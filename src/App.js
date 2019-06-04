@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Forums from "./components/Forums";
 import ForumPosts from "./components/ForumPosts";
 import UserPost from "./components/UserPost";
-import NewPost from "./components/NewPost";
+import AddNewPost from "./components/AddNewPost";
 import Store from "./Store";
 import DoggyContext from "./DoggyContext";
 
@@ -33,7 +33,7 @@ export default class App extends React.Component {
               <Route exact path="/forums" component={Forums} />
               <Route path="/forums/:folderId" component={ForumPosts} />
               <Route path="/post/:postId" component={UserPost} />
-              <Route path="/new-post" component={NewPost} />
+              <Route path="/new-post" component={AddNewPost} />
             </Switch>
           </main>
           <section>

@@ -35,7 +35,7 @@ export default class ForumPosts extends React.Component {
           <p id="posts">Replies</p>
         </div>
         <div>
-          <ul>
+          <ul className="forum-post-list">
             <li>{forumPosts}</li>
           </ul>
         </div>
