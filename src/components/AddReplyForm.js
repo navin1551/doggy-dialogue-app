@@ -4,9 +4,8 @@ import "./AddReplyForm.css";
 export default class AddReplyForm extends React.Component {
   render() {
     return (
-      <div>
-        <input
-          type="text"
+      <div className="add-reply">
+        <textarea
           id="add-reply-input"
           name="add-reply-input"
           placeholder="Reply Here"

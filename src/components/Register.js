@@ -17,12 +17,17 @@ export default class Register extends React.Component {
           <br />
           - No harrassement or bullying of other Doggy Dialogue members
           <br />
-          - No saying someone's doggy is not cute!
+          <br />
+          - No negative comments about any dogs or dogs in general. Rule will
+          strictly be enforced!
+          <br />
           <br />
           - No posting of false information (especially in the doggy health
           forum!!!)
           <br />
+          <br />
           - No posts about cats, birds, fishes or anything other weirdos
+          <br />
           <br />
           - Administrator has the right to edit all posted content and remove
           any user who violates stated rules

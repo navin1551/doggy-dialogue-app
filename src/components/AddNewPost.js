@@ -38,6 +38,16 @@ export default class AddNewPost extends React.Component {
     this.setState({ forumId });
   }
 
+  postSubmitHandle = e => {
+    e.preventDefault();
+    console.log("post submit tester");
+    this.setState({
+      title: "",
+      content: "",
+      forumId: ""
+    });
+  };
+
   validateTitle(fieldValue) {
     const fieldErrors = { ...this.state.validationMessages };
     let hasError = false;
@@ -103,7 +113,7 @@ export default class AddNewPost extends React.Component {
           <h2>Doggie Pics!!!</h2>
         </div>
         <div>
-          <form className="new-post-form">
+          <form className="new-post-form" onSubmit={this.postSubmitHandle}>
             <div>
               <h3>New Post</h3>
             </div>

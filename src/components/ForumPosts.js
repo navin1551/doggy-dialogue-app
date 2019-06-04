@@ -34,10 +34,8 @@ export default class ForumPosts extends React.Component {
           <p id="last-post">Last post</p>
           <p id="posts">Replies</p>
         </div>
-        <div>
-          <ul className="forum-post-list">
-            <li>{forumPosts}</li>
-          </ul>
+        <div className="forum-post-list">
+          <span>{forumPosts}</span>
         </div>
       </div>
     );
