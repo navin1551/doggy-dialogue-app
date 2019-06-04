@@ -118,7 +118,9 @@ export default class AddNewPost extends React.Component {
               <h3>New Post</h3>
             </div>
             <div>
-              <label htmlFor="title">Title:</label>
+              <label className="new-post-labels" htmlFor="title">
+                Title:
+              </label>
               <input
                 type="text"
                 id="new-post-title"
@@ -132,7 +134,9 @@ export default class AddNewPost extends React.Component {
             />
             <br />
             <div>
-              <label htmlFor="content">Content:</label>
+              <label className="new-post-labels" htmlFor="content">
+                Content:
+              </label>
               <textarea
                 id="new-post-content"
                 name="new-post-content"
@@ -144,7 +148,9 @@ export default class AddNewPost extends React.Component {
               message={this.state.validationMessages.content}
             />
             <br />
-            <label htmlFor="forum">Forum:</label>
+            <label className="new-post-labels" htmlFor="forum">
+              Forum:
+            </label>
             <select
               type="select"
               id="forum-input"
@@ -152,7 +158,7 @@ export default class AddNewPost extends React.Component {
             >
               <option value="">Choose Forum...</option>
               {this.context.store.forums.map(forum => (
-                <option key={forum.id} value={forum.id}>
+                <option id="forum-selecter" key={forum.id} value={forum.id}>
                   {forum.name}
                 </option>
               ))}

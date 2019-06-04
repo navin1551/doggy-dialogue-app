@@ -10,3 +10,9 @@ input {
 .sign-up-button {
   border: 1px solid black;
 }
+
+.register-label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}

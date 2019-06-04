@@ -20,3 +20,19 @@
 #new-post-content {
   border: 1px solid black;
 }
+
+.new-post-labels {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+}
+
+#new-post-title,
+#new-post-content,
+#forum-input {
+  margin-left: 5px;
+}
+
+#forum-selecter {
+  border: 1px solid black;
+}
