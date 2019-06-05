@@ -8,7 +8,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header className="doggy-dialogue-header">
-        <Link to={"/forums"}>
+        <Link id="doggy-dialogue-link" to={"/forums"}>
           <h1 id="doggy-dialogue">Doggy Dialogue</h1>
         </Link>
         <LoginForm />

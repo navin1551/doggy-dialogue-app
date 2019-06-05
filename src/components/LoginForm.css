@@ -18,3 +18,13 @@
   margin-right: 5px;
   margin-bottom: 3px;
 }
+
+#register-link {
+  font-size: 10px;
+  display: inline;
+  margin-right: 5px;
+}
+
+#link-register {
+  text-decoration: none;
+}

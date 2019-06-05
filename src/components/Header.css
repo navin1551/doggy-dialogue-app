@@ -6,3 +6,7 @@
 #doggy-dialogue {
   font-size: 33px;
 }
+
+#doggy-dialogue-link {
+  text-decoration: none;
+}
