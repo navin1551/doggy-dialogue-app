@@ -10,6 +10,7 @@ export default class AddNewPost extends React.Component {
       title: "",
       content: "",
       forumId: "",
+      modified: new Date(),
       formValid: false,
       titleValid: false,
       contentValid: false,
@@ -38,11 +39,17 @@ export default class AddNewPost extends React.Component {
     this.setState({ forumId });
   }
 
+  addModified(modified) {
+    this.setState({
+      modified
+    });
+  }
+
   postSubmitHandle = e => {
     e.preventDefault();
-    let { title, content, forumId } = this.state;
+    let { title, content, forumId, modified } = this.state;
     forumId = parseInt(forumId);
-    const newPost = { title, content, forumId };
+    const newPost = { title, content, forumId, modified };
     console.log(newPost);
     this.context.addPost(newPost);
   };
@@ -114,7 +121,10 @@ export default class AddNewPost extends React.Component {
           <h2>New Post</h2>
         </div>
         <div>
-          <form className="new-post-form" onSubmit={this.postSubmitHandle}>
+          <form
+            className="new-post-form"
+            onSubmit={e => this.postSubmitHandle(e)}
+          >
             <div>
               <h3>New Post</h3>
             </div>

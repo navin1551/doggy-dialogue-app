@@ -6,7 +6,8 @@ export default class AddReplyInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      reply: ""
+      reply: "",
+      modified: new Date()
     };
   }
 
@@ -19,8 +20,8 @@ export default class AddReplyInput extends React.Component {
   addReplyHandle = e => {
     e.preventDefault();
     console.log("reply button tester");
-    const { reply } = this.state;
-    const newReply = { reply };
+    const { reply, modified } = this.state;
+    const newReply = { reply, modified };
     console.log(newReply);
     this.context.addReply(newReply);
   };
@@ -37,7 +38,7 @@ export default class AddReplyInput extends React.Component {
           />
         </div>
         <div>
-          <button id="reply-button" onClick={this.addReplyHandle}>
+          <button id="reply-button" onClick={e => this.addReplyHandle(e)}>
             Reply
           </button>
         </div>
