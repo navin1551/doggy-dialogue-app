@@ -16,9 +16,20 @@ export default class App extends React.Component {
     store: Store
   };
 
+  addPostHandle = newPost => {
+    let currentPosts = this.state.store.posts.slice();
+    currentPosts.push(newPost);
+    this.setState({
+      store: {
+        posts: newPost
+      }
+    });
+  };
+
   render() {
     const contextValue = {
-      store: this.state.store
+      store: this.state.store,
+      addPost: this.addPostHandle
     };
     return (
       <DoggyContext.Provider value={contextValue}>

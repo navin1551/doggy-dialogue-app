@@ -7,7 +7,7 @@ export default class Register extends React.Component {
     return (
       <div className="register-area">
         <div className="register-header-area">
-          <h2 className="register-header">Sign up for full doggy access!</h2>
+          <h2 className="register-header">Sign up for full forum access!</h2>
         </div>
         <RegisterForm />
         <p>

@@ -41,11 +41,9 @@ export default class AddNewPost extends React.Component {
   postSubmitHandle = e => {
     e.preventDefault();
     console.log("post submit tester");
-    this.setState({
-      title: "",
-      content: "",
-      forumId: ""
-    });
+    const { title, content, forumId } = this.state;
+    const post = { title, content, forumId };
+    this.context.addPost(post);
   };
 
   validateTitle(fieldValue) {

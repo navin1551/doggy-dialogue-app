@@ -20,9 +20,9 @@ export default class ForumPosts extends React.Component {
               />
             );
           }
-          return null;
+          return null; //possibly add empty string
         })
-      : null;
+      : null; //possibly add empty string
 
     return (
       <div className="forum-posts-doggy-picture-area">

@@ -2,7 +2,8 @@ import React from "react";
 
 const DoggyContext = React.createContext({
   posts: [],
-  replies: []
+  replies: [],
+  addPost: () => {}
 });
 
 export default DoggyContext;
