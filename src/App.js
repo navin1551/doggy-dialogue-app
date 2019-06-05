@@ -17,11 +17,29 @@ export default class App extends React.Component {
   };
 
   addPostHandle = newPost => {
-    let currentPosts = this.state.store.posts.slice();
+    let currentPosts = this.state.store.posts;
+    console.log(currentPosts);
+    let currentPostId = currentPosts[currentPosts.length - 1].id + 1;
+    newPost.id = currentPostId;
     currentPosts.push(newPost);
     this.setState({
       store: {
-        posts: newPost
+        posts: currentPosts,
+        forums: this.state.store.forums,
+        replies: this.state.replies
+      }
+    });
+  };
+
+  addReplyHandle = newReply => {
+    let currentReplies = this.state.store.replies;
+    console.log(currentReplies);
+    currentReplies.push(newReply);
+    this.setState({
+      store: {
+        replies: currentReplies,
+        posts: this.state.store.posts,
+        forums: this.state.store.forums
       }
     });
   };
@@ -29,7 +47,8 @@ export default class App extends React.Component {
   render() {
     const contextValue = {
       store: this.state.store,
-      addPost: this.addPostHandle
+      addPost: this.addPostHandle,
+      addReply: this.addReplyHandle
     };
     return (
       <DoggyContext.Provider value={contextValue}>

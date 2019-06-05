@@ -7,4 +7,9 @@
 
 .add-reply {
   text-align: center;
+  margin-top: 20px;
+}
+
+#reply-button {
+  border: 1px solid black;
 }

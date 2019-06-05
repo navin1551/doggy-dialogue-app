@@ -3,280 +3,280 @@ export default {
     {
       id: 1,
       title: "dummy title 1",
-      question: "dummy question 1",
+      content: "dummy content 1",
       forumId: 1
     },
 
     {
       id: 2,
       title: "dummy title 2",
-      question: "dummy question 2",
+      content: "dummy content 2",
       forumId: 2
     },
 
     {
       id: 3,
       title: "dummy title 3",
-      question: "dummy question 3",
+      content: "dummy content 3",
       forumId: 3
     },
 
     {
       id: 4,
       title: "dummy title 4",
-      question: "dummy question 4",
+      content: "dummy content 4",
       forumId: 4
     },
 
     {
       id: 5,
       title: "dummy title 5",
-      question: "dummy question 5",
+      content: "dummy content 5",
       forumId: 5
     },
 
     {
       id: 6,
       title: "dummy title 6",
-      question: "dummy question 6",
+      content: "dummy content 6",
       forumId: 6
     },
 
     {
       id: 7,
       title: "dummy title 7",
-      question: "dummy question 7",
+      content: "dummy content 7",
       forumId: 7
     },
 
     {
       id: 8,
       title: "dummy title 8",
-      question: "dummy question 8",
+      content: "dummy content 8",
       forumId: 8
     },
 
     {
       id: 9,
       title: "dummy title 9",
-      question: "dummy question 9",
+      content: "dummy content 9",
       forumId: 9
     },
 
     {
       id: 10,
       title: "dummy title 10",
-      question: "dummy question 10",
+      content: "dummy content 10",
       forumId: 10
     },
 
     {
       id: 11,
       title: "dummy title 11",
-      question: "dummy question 11",
+      content: "dummy content 11",
       forumId: 11
     },
 
     {
       id: 12,
       title: "dummy title 12",
-      question: "dummy question 12",
+      content: "dummy content 12",
       forumId: 12
     },
 
     {
       id: 13,
       title: "dummy title 13",
-      question: "dummy question 13",
+      content: "dummy content 13",
       forumId: 13
     },
 
     {
       id: 14,
       title: "dummy title 14",
-      question: "dummy question 14",
+      content: "dummy content 14",
       forumId: 14
     },
 
     {
       id: 15,
       title: "dummy title 15",
-      question: "dummy question 15",
+      content: "dummy content 15",
       forumId: 10
     },
 
     {
       id: 16,
       title: "dummy title 16",
-      question: "dummy question 16",
+      content: "dummy content 16",
       forumId: 9
     },
 
     {
       id: 17,
       title: "dummy title 17",
-      question: "dummy question 17",
+      content: "dummy content 17",
       forumId: 11
     },
 
     {
       id: 18,
       title: "dummy title 18",
-      question: "dummy question 18",
+      content: "dummy content 18",
       forumId: 8
     },
 
     {
       id: 19,
       title: "dummy title 19",
-      question: "dummy question 19",
+      content: "dummy content 19",
       forumId: 5
     },
 
     {
       id: 20,
       title: "dummy title 20",
-      question: "dummy question 20",
+      content: "dummy content 20",
       forumId: 6
     },
 
     {
       id: 21,
       title: "dummy title 21",
-      question: "dummy question 21",
+      content: "dummy content 21",
       forumId: 1
     },
 
     {
       id: 22,
       title: "dummy title 22",
-      question: "dummy question 22",
+      content: "dummy content 22",
       forumId: 2
     },
 
     {
       id: 23,
       title: "dummy title 23",
-      question: "dummy question 23",
+      content: "dummy content 23",
       forumId: 3
     },
 
     {
       id: 24,
       title: "dummy title 24",
-      question: "dummy question 24",
+      content: "dummy content 24",
       forumId: 4
     },
 
     {
       id: 25,
       title: "dummy title 25",
-      question: "dummy question 25",
+      content: "dummy content 25",
       forumId: 5
     },
 
     {
       id: 26,
       title: "dummy title 26",
-      question: "dummy question 26",
+      content: "dummy content 26",
       forumId: 6
     },
 
     {
       id: 27,
       title: "dummy title 27",
-      question: "dummy question 27",
+      content: "dummy content 27",
       forumId: 7
     },
 
     {
       id: 28,
       title: "dummy title 28",
-      question: "dummy question 28",
+      content: "dummy content 28",
       forumId: 8
     },
 
     {
       id: 29,
       title: "dummy title 29",
-      question: "dummy question 29",
+      content: "dummy content 29",
       forumId: 9
     },
 
     {
       id: 30,
       title: "dummy title 10",
-      question: "dummy question 10",
+      content: "dummy content 10",
       forumId: 10
     },
 
     {
       id: 31,
       title: "dummy title 31",
-      question: "dummy question 31",
+      content: "dummy content 31",
       forumId: 11
     },
 
     {
       id: 32,
       title: "dummy title 32",
-      question: "dummy question 32",
+      content: "dummy content 32",
       forumId: 12
     },
 
     {
       id: 33,
       title: "dummy title 33",
-      question: "dummy question 33",
+      content: "dummy content 33",
       forumId: 13
     },
 
     {
       id: 34,
       title: "dummy title 34",
-      question: "dummy question 34",
+      content: "dummy content 34",
       forumId: 14
     },
 
     {
       id: 35,
       title: "dummy title 35",
-      question: "dummy question 35",
+      content: "dummy content 35",
       forumId: 10
     },
 
     {
       id: 36,
       title: "dummy title 36",
-      question: "dummy question 36",
+      content: "dummy content 36",
       forumId: 9
     },
 
     {
       id: 37,
       title: "dummy title 37",
-      question: "dummy question 37",
+      content: "dummy content 37",
       forumId: 11
     },
 
     {
       id: 38,
       title: "dummy title 38",
-      question: "dummy question 38",
+      content: "dummy content 38",
       forumId: 8
     },
 
     {
       id: 39,
       title: "dummy title 39",
-      question: "dummy question 39",
+      content: "dummy content 39",
       forumId: 5
     },
 
     {
       id: 40,
       title: "dummy title 40",
-      question: "dummy question 40",
+      content: "dummy content 40",
       forumId: 6
     }
   ],
@@ -471,6 +471,198 @@ export default {
     {
       id: 32,
       reply: "Reply 32",
+      postId: "16"
+    },
+
+    {
+      id: 33,
+      reply: "Reply 33",
+      postId: "1"
+    },
+
+    {
+      id: 34,
+      reply: "Reply 34",
+      postId: "2"
+    },
+
+    {
+      id: 35,
+      reply: "Reply 35",
+      postId: "3"
+    },
+
+    {
+      id: 36,
+      reply: "Reply 36",
+      postId: "4"
+    },
+
+    {
+      id: 37,
+      reply: "Reply 37",
+      postId: "5"
+    },
+
+    {
+      id: 38,
+      reply: "Reply 38",
+      postId: "6"
+    },
+
+    {
+      id: 39,
+      reply: "Reply 39",
+      postId: "7"
+    },
+
+    {
+      id: 40,
+      reply: "Reply 40",
+      postId: "8"
+    },
+
+    {
+      id: 41,
+      reply: "Reply 41",
+      postId: "9"
+    },
+
+    {
+      id: 42,
+      reply: "Reply 42",
+      postId: "10"
+    },
+
+    {
+      id: 43,
+      reply: "Reply 43",
+      postId: "11"
+    },
+
+    {
+      id: 44,
+      reply: "Reply 44",
+      postId: "12"
+    },
+
+    {
+      id: 45,
+      reply: "Reply 45",
+      postId: "13"
+    },
+
+    {
+      id: 46,
+      reply: "Reply 46",
+      postId: "14"
+    },
+
+    {
+      id: 47,
+      reply: "Reply 47",
+      postId: "15"
+    },
+
+    {
+      id: 48,
+      reply: "Reply 48",
+      postId: "16"
+    },
+
+    {
+      id: 49,
+      reply: "Reply 49",
+      postId: "1"
+    },
+
+    {
+      id: 50,
+      reply: "Reply 50",
+      postId: "2"
+    },
+
+    {
+      id: 51,
+      reply: "Reply 51",
+      postId: "3"
+    },
+
+    {
+      id: 52,
+      reply: "Reply 52",
+      postId: "4"
+    },
+
+    {
+      id: 53,
+      reply: "Reply 53",
+      postId: "5"
+    },
+
+    {
+      id: 54,
+      reply: "Reply 54",
+      postId: "6"
+    },
+
+    {
+      id: 55,
+      reply: "Reply 55",
+      postId: "7"
+    },
+
+    {
+      id: 56,
+      reply: "Reply 56",
+      postId: "8"
+    },
+
+    {
+      id: 57,
+      reply: "Reply 57",
+      postId: "9"
+    },
+
+    {
+      id: 58,
+      reply: "Reply 58",
+      postId: "10"
+    },
+
+    {
+      id: 59,
+      reply: "Reply 59",
+      postId: "11"
+    },
+
+    {
+      id: 60,
+      reply: "Reply 60",
+      postId: "12"
+    },
+
+    {
+      id: 61,
+      reply: "Reply 61",
+      postId: "13"
+    },
+
+    {
+      id: 62,
+      reply: "Reply 62",
+      postId: "14"
+    },
+
+    {
+      id: 63,
+      reply: "Reply 63",
+      postId: "15"
+    },
+
+    {
+      id: 64,
+      reply: "Reply 64",
       postId: "16"
     }
   ],

@@ -40,10 +40,11 @@ export default class AddNewPost extends React.Component {
 
   postSubmitHandle = e => {
     e.preventDefault();
-    console.log("post submit tester");
-    const { title, content, forumId } = this.state;
-    const post = { title, content, forumId };
-    this.context.addPost(post);
+    let { title, content, forumId } = this.state;
+    forumId = parseInt(forumId);
+    const newPost = { title, content, forumId };
+    console.log(newPost);
+    this.context.addPost(newPost);
   };
 
   validateTitle(fieldValue) {
@@ -105,6 +106,8 @@ export default class AddNewPost extends React.Component {
   }
 
   render() {
+    const { forums = [] } = this.context.store;
+
     return (
       <div>
         <div className="new-post-header-area">
@@ -155,7 +158,7 @@ export default class AddNewPost extends React.Component {
               onChange={e => this.addFolderId(e.target.value)}
             >
               <option value="">Choose Forum...</option>
-              {this.context.store.forums.map(forum => (
+              {forums.map(forum => (
                 <option id="forum-selecter" key={forum.id} value={forum.id}>
                   {forum.name}
                 </option>

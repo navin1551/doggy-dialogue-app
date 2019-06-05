@@ -1,17 +1,20 @@
 import React from "react";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
-import Question from "./Question";
-import AddReplyForm from "./AddReplyForm";
+import Content from "./Content";
+import AddReplyInput from "./AddReplyInput";
 import "./UserPost.css";
 
 export default class UserPost extends React.Component {
   static contextType = DoggyContext;
   render() {
+    const { replies = [] } = this.context.store;
+    console.log(replies);
     let postId = parseInt(this.props.match.params.postId);
     console.log(this.context);
+    console.log(postId);
     let postReplies = this.props.match.params.hasOwnProperty("postId")
-      ? this.context.store.replies.map(reply => {
+      ? replies.map(reply => {
           if (reply.id === postId) {
             return <Replies key={reply.id} id={reply.id} reply={reply.reply} />;
           }
@@ -19,9 +22,9 @@ export default class UserPost extends React.Component {
         })
       : null;
 
-    let question = this.context.store.posts.map(post => {
+    let content = this.context.store.posts.map(post => {
       if (post.id === postId) {
-        return <Question key={post.id} id={post.id} question={post.question} />;
+        return <Content key={post.id} id={post.id} content={post.content} />;
       } else {
         return null;
       }
@@ -30,12 +33,12 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
-          <h2>Doggie Pics!!!</h2>
+          <h2>Post Title</h2>
         </div>
-        <div>{question}</div>
+        <div>{content}</div>
         <div>{postReplies}</div>
         <div>
-          <AddReplyForm />
+          <AddReplyInput />
         </div>
       </div>
     );

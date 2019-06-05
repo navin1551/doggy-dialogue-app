@@ -8,21 +8,19 @@ export default class ForumPosts extends React.Component {
   render() {
     let forumId = parseInt(this.props.match.params.folderId);
 
-    let forumPosts = this.props.match.params.hasOwnProperty("folderId")
-      ? this.context.store.posts.map(post => {
-          if (post.forumId === forumId) {
-            return (
-              <Post
-                key={post.id}
-                id={post.id}
-                title={post.title}
-                question={post.question}
-              />
-            );
-          }
-          return null; //possibly add empty string
-        })
-      : null; //possibly add empty string
+    let forumPosts = this.context.store.posts.map(post => { //this.props.match.params.hasOwnProperty("folderId")
+      if (post.forumId === forumId) {
+        return (
+          <Post
+            key={post.id}
+            id={post.id}
+            title={post.title}
+            question={post.question}
+          />
+        );
+      }
+      return null; //possibly add empty string
+    });
 
     return (
       <div className="forum-posts-doggy-picture-area">

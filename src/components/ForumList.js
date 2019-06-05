@@ -6,6 +6,7 @@ import DoggyContext from "../DoggyContext";
 export default class ForumList extends React.Component {
   static contextType = DoggyContext;
   render() {
+    console.log(this.context);
     return (
       <div>
         <p className="forum-topic">Community Welcome</p>
