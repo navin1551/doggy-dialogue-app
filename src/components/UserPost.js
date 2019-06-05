@@ -9,10 +9,9 @@ export default class UserPost extends React.Component {
   static contextType = DoggyContext;
   render() {
     const { replies = [] } = this.context.store;
-    console.log(replies);
+
     let postId = parseInt(this.props.match.params.postId);
-    console.log(this.context);
-    console.log(postId);
+
     let postReplies = this.props.match.params.hasOwnProperty("postId")
       ? replies.map(reply => {
           if (reply.id === postId) {

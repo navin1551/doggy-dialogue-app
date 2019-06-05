@@ -18,7 +18,6 @@ export default class App extends React.Component {
 
   addPostHandle = newPost => {
     let currentPosts = this.state.store.posts;
-    console.log(currentPosts);
     let currentPostId = currentPosts[currentPosts.length - 1].id + 1;
     newPost.id = currentPostId;
     currentPosts.push(newPost);
@@ -33,8 +32,10 @@ export default class App extends React.Component {
 
   addReplyHandle = newReply => {
     let currentReplies = this.state.store.replies;
-    console.log(currentReplies);
+    let currentReplyId = currentReplies[currentReplies.length - 1].id + 1;
+    newReply.id = currentReplyId;
     currentReplies.push(newReply);
+    console.log(currentReplies);
     this.setState({
       store: {
         replies: currentReplies,

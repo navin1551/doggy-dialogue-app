@@ -5,10 +5,11 @@ import Post from "./Post";
 
 export default class ForumPosts extends React.Component {
   static contextType = DoggyContext;
+
   render() {
     let forumId = parseInt(this.props.match.params.folderId);
 
-    let forumPosts = this.context.store.posts.map(post => { //this.props.match.params.hasOwnProperty("folderId")
+    let forumPosts = this.context.store.posts.map(post => {
       if (post.forumId === forumId) {
         return (
           <Post
@@ -19,7 +20,7 @@ export default class ForumPosts extends React.Component {
           />
         );
       }
-      return null; //possibly add empty string
+      return null;
     });
 
     return (

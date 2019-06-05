@@ -6,17 +6,22 @@ export default class AddReplyInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      replies: ""
+      reply: ""
     };
   }
 
   static contextType = DoggyContext;
 
+  addReply(reply) {
+    this.setState({ reply });
+  }
+
   addReplyHandle = e => {
     e.preventDefault();
     console.log("reply button tester");
-    const { replies } = this.state;
-    const newReply = { replies };
+    const { reply } = this.state;
+    const newReply = { reply };
+    console.log(newReply);
     this.context.addReply(newReply);
   };
 
@@ -28,6 +33,7 @@ export default class AddReplyInput extends React.Component {
             id="add-reply-input"
             name="add-reply-input"
             placeholder="Reply Here"
+            onChange={e => this.addReply(e.target.value)}
           />
         </div>
         <div>
