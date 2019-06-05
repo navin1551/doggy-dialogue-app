@@ -59,7 +59,7 @@ export default class App extends React.Component {
           </section>
           <main>
             <Switch>
-              <Route path="/about-us" component={AboutUs} />
+              <Route path="/" component={AboutUs} />
               <Route path="/register" component={Register} />
               <Route exact path="/forums" component={Forums} />
               <Route path="/forums/:folderId" component={ForumPosts} />
