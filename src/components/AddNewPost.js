@@ -111,7 +111,7 @@ export default class AddNewPost extends React.Component {
     return (
       <div>
         <div className="new-post-header-area">
-          <h2>Doggie Pics!!!</h2>
+          <h2>New Post</h2>
         </div>
         <div>
           <form className="new-post-form" onSubmit={this.postSubmitHandle}>

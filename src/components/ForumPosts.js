@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ForumPosts.css";
 import DoggyContext from "../DoggyContext";
 import Post from "./Post";
@@ -27,10 +28,13 @@ export default class ForumPosts extends React.Component {
       <div className="forum-posts-doggy-picture-area">
         <div>
           <h2>Forum Posts</h2>
+          <Link to="/new-post">
+            <button id="new-thread-button">+ New Post</button>
+          </Link>
         </div>
         <div className="forum-posts-headers">
-          <p id="thread">Thread</p>
-          <p id="last-post">Last post</p>
+          <p id="thread">Post</p>
+          <p id="last-post">Last reply</p>
           <p id="posts">Replies</p>
         </div>
         <div className="forum-post-list">

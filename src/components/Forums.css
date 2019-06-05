@@ -25,3 +25,9 @@
   height: 100px;
   text-align: center;
 }
+
+#new-thread-button {
+  border: 1px solid black;
+  margin-right: 75%;
+  margin-top: 10px;
+}

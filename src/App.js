@@ -25,7 +25,7 @@ export default class App extends React.Component {
       store: {
         posts: currentPosts,
         forums: this.state.store.forums,
-        replies: this.state.replies
+        replies: this.state.store.replies
       }
     });
   };
