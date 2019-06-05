@@ -7,6 +7,7 @@ import "./UserPost.css";
 
 export default class UserPost extends React.Component {
   static contextType = DoggyContext;
+
   render() {
     const { replies = [] } = this.context.store;
 

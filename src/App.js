@@ -58,14 +58,12 @@ export default class App extends React.Component {
             <Header />
           </section>
           <main>
-            <Switch>
-              <Route path="/" component={AboutUs} />
-              <Route path="/register" component={Register} />
-              <Route exact path="/forums" component={Forums} />
-              <Route path="/forums/:folderId" component={ForumPosts} />
-              <Route path="/post/:postId" component={UserPost} />
-              <Route path="/new-post" component={AddNewPost} />
-            </Switch>
+            <Route exact path="/" component={AboutUs} />
+            <Route path="/register" component={Register} />
+            <Route exact path="/forums" component={Forums} />
+            <Route path="/forums/:folderId" component={ForumPosts} />
+            <Route path="/post/:postId" component={UserPost} />
+            <Route path="/new-post" component={AddNewPost} />
           </main>
           <section>
             <Footer />
