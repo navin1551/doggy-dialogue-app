@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import AboutUs from "./components/AboutUs";
 import Register from "./components/Register";
+import Adopt from "./components/Adopt";
 import Footer from "./components/Footer";
 import Forums from "./components/Forums";
 import ForumPosts from "./components/ForumPosts";
@@ -61,6 +62,7 @@ export default class App extends React.Component {
             <Route exact path="/" component={AboutUs} />
             <Route path="/register" component={Register} />
             <Route exact path="/forums" component={Forums} />
+            <Route path="/adopt" component={Adopt} />
             <Route path="/forums/:folderId" component={ForumPosts} />
             <Route path="/post/:postId" component={UserPost} />
             <Route path="/new-post" component={AddNewPost} />

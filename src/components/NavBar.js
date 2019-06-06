@@ -13,7 +13,7 @@ export default class NavBar extends React.Component {
           <Link to={"/forums"}>
             <li id="forums">Forums</li>
           </Link>
-          <Link to={"/"}>
+          <Link to={"/adopt"}>
             <li id="adoption-and-rescue">Adoption & Rescue</li>
           </Link>
         </ul>

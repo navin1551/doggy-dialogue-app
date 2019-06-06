@@ -1,0 +1,23 @@
+.adopt-area {
+  border: 1px solid black;
+  height: 100px;
+  text-align: center;
+}
+
+.adopt-title {
+  margin-top: 53px;
+  border: 1px solid black;
+}
+
+#city-label {
+  margin-right: 5px;
+}
+
+#city-search-button {
+  border: 1px solid black;
+  margin-left: 5px;
+}
+
+.city-search-form {
+  margin-top: 20px;
+}
