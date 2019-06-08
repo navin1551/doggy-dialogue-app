@@ -9,7 +9,7 @@ export default class AddNewPost extends React.Component {
     this.state = {
       title: "",
       content: "",
-      forumId: "",
+      forumid: "",
       modified: new Date(),
       formValid: false,
       titleValid: false,
@@ -35,8 +35,8 @@ export default class AddNewPost extends React.Component {
     });
   }
 
-  addFolderId(forumId) {
-    this.setState({ forumId });
+  addFolderId(forumid) {
+    this.setState({ forumid });
   }
 
   addModified(modified) {
@@ -47,11 +47,35 @@ export default class AddNewPost extends React.Component {
 
   postSubmitHandle = e => {
     e.preventDefault();
-    let { title, content, forumId, modified } = this.state;
-    forumId = parseInt(forumId);
-    const newPost = { title, content, forumId, modified };
-    console.log(newPost);
-    this.context.addPost(newPost);
+    let { title, content, forumid, modified, id } = this.state;
+    forumid = parseInt(forumid);
+    const newPost = { title, content, forumid, modified, id };
+    fetch(`http://localhost:8000/api/posts`, {
+      method: "POST",
+      body: JSON.stringify(newPost),
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+      .then(res => {
+        if (!res.ok) {
+          throw new Error("Something went wrong please try again later");
+        }
+        return res.json();
+      })
+      .then(() => {
+        this.setState({
+          title: "",
+          content: "",
+          forumid: "",
+          modified: new Date()
+        });
+        this.context.addPost(newPost);
+        window.location = "/";
+      })
+      .catch(error => {
+        console.log(error);
+      });
   };
 
   validateTitle(fieldValue) {
