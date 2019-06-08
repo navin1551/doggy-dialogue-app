@@ -38,7 +38,7 @@ export default class UserPost extends React.Component {
         <div>{content}</div>
         <div>{postReplies}</div>
         <div>
-          <AddReplyInput />
+          <AddReplyInput postid={postId} />
         </div>
       </div>
     );
