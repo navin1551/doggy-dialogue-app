@@ -6,6 +6,7 @@ export default class Adopt extends React.Component {
     e.preventDefault();
     console.log("adopt city test");
   };
+
   render() {
     return (
       <div className="adopt-area">

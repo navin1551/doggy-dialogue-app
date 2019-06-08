@@ -4,7 +4,10 @@ const DoggyContext = React.createContext({
   posts: [],
   replies: [],
   addPost: () => {},
-  addReply: () => {}
+  addReply: () => {},
+  deletePost: () => {},
+  updatePost: () => {},
+  updateReply: () => {}
 });
 
 export default DoggyContext;

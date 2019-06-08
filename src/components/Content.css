@@ -3,3 +3,18 @@
   height: 75px;
   background-color: lightgrey;
 }
+
+#post-delete-button {
+  border: 1px solid black;
+}
+
+#post-edit-button {
+  border: 1px solid black;
+  margin-right: 7px;
+}
+
+.post-button-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
