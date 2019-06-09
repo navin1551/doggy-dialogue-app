@@ -119,8 +119,8 @@ export default class AddNewPost extends React.Component {
       fieldErrors.content = "Must have content to create post!";
       hasError = true;
     } else {
-      if (fieldValue.length < 20 || fieldValue.length > 700) {
-        fieldErrors.content = "Content must be at least 20 characters long";
+      if (fieldValue.length < 10 || fieldValue.length > 700) {
+        fieldErrors.content = "Content must be at least 10 characters long";
         hasError = true;
       } else {
         fieldErrors.content = "";

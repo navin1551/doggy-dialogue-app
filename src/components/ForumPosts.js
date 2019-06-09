@@ -27,7 +27,7 @@ export default class ForumPosts extends React.Component {
     return (
       <div className="forum-posts-doggy-picture-area">
         <div>
-          <h2>Forum Posts</h2>
+          <h2>Forum Title</h2>
           <Link to="/new-post">
             <button id="new-thread-button">+ New Post</button>
           </Link>

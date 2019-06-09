@@ -12,16 +12,17 @@ export default class UserPost extends React.Component {
     const { replies = [] } = this.context;
 
     let postId = parseInt(this.props.match.params.postId);
-
+    console.log(postId);
+    console.log(replies);
     let postReplies = this.props.match.params.hasOwnProperty("postId")
       ? replies.map(reply => {
-          if (reply.id === postId) {
+          if (reply.postid === postId) {
             return <Replies key={reply.id} id={reply.id} reply={reply.reply} />;
           }
           return null;
         })
       : null;
-
+    console.log(postReplies);
     let content = this.context.posts.map(post => {
       if (post.id === postId) {
         return <Content key={post.id} id={post.id} content={post.content} />;
