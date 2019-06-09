@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";
@@ -14,6 +15,7 @@ export default class UserPost extends React.Component {
     let postId = parseInt(this.props.match.params.postId);
     console.log(postId);
     console.log(replies);
+    console.log(this.context.posts);
     let postReplies = this.props.match.params.hasOwnProperty("postId")
       ? replies.map(reply => {
           if (reply.postid === postId) {
@@ -35,6 +37,9 @@ export default class UserPost extends React.Component {
       <div>
         <div className="user-post-header-area">
           <h2>Post Title</h2>
+          <Link to={`/forums/${postId}`}>
+            <button id="back-button">Go Back</button>
+          </Link>
         </div>
         <div>{content}</div>
         <div>{postReplies}</div>

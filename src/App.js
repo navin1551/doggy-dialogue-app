@@ -115,7 +115,6 @@ export default class App extends React.Component {
   };
 
   render() {
-    console.log(Store.forums);
     const contextValue = {
       posts: this.state.posts,
       replies: this.state.replies,
