@@ -9,10 +9,26 @@ export default class Content extends React.Component {
   postDeleteHandle = e => {
     e.preventDefault();
     const postId = this.props.id;
-    console.log(this.props.id);
-    this.context.deletePost(postId);
-    console.log("delete 1");
+
+    fetch(`http://localhost:8000/api/posts/${postId}`, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+      .then(res => {
+        if (!res.ok) return res.json().then(error => Promise.reject(error));
+        return null;
+      })
+      .then(() => {
+        this.context.deletePost(postId);
+        window.location = "/";
+      })
+      .catch(error => {
+        console.error({ error });
+      });
   };
+
   render() {
     return (
       <div className="post-content-area">

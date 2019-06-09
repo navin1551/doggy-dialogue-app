@@ -71,7 +71,7 @@ export default class AddNewPost extends React.Component {
           modified: new Date()
         });
         this.context.addPost(newPost);
-        window.location = "/";
+        window.location = "/forums";
       })
       .catch(error => {
         console.log(error);

@@ -50,7 +50,6 @@ export default class AddReplyInput extends React.Component {
           modified: new Date()
         });
         this.context.addReply(newReply);
-        window.location = "/";
       })
       .catch(error => {
         console.error({ error });

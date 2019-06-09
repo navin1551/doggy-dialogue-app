@@ -83,6 +83,15 @@ export default class App extends React.Component {
     });
   };
 
+  deleteReplyHandle = id => {
+    let updatedReplies = this.state.replies.filter(reply => reply.id !== id);
+    this.setState({
+      replies: updatedReplies,
+      posts: this.state.posts,
+      forums: this.state.forums
+    });
+  };
+
   updatePost = updatedPost => {
     const newPosts = this.state.posts.map(post =>
       post.id === updatedPost.id ? updatedPost : post
@@ -114,6 +123,7 @@ export default class App extends React.Component {
       addPost: this.addPostHandle,
       addReply: this.addReplyHandle,
       deletePost: this.deletePostHandle,
+      deleteReply: this.deleteReplyHandle,
       updatePost: this.updatePost,
       updateReply: this.updateReply
     };
