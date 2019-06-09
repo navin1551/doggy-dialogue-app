@@ -9,7 +9,7 @@ export default class UserPost extends React.Component {
   static contextType = DoggyContext;
 
   render() {
-    const { replies = [] } = this.context.store;
+    const { replies = [] } = this.context;
 
     let postId = parseInt(this.props.match.params.postId);
 
@@ -22,7 +22,7 @@ export default class UserPost extends React.Component {
         })
       : null;
 
-    let content = this.context.store.posts.map(post => {
+    let content = this.context.posts.map(post => {
       if (post.id === postId) {
         return <Content key={post.id} id={post.id} content={post.content} />;
       } else {

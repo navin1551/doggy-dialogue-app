@@ -10,8 +10,8 @@ export default class ForumPosts extends React.Component {
   render() {
     let forumId = parseInt(this.props.match.params.folderId);
 
-    let forumPosts = this.context.store.posts.map(post => {
-      if (post.forumId === forumId) {
+    let forumPosts = this.context.posts.map(post => {
+      if (post.forumid === forumId) {
         return (
           <Post
             key={post.id}

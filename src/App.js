@@ -16,25 +16,51 @@ import DoggyContext from "./DoggyContext";
 
 export default class App extends React.Component {
   state = {
-    store: Store
+    posts: [],
+    replies: [],
+    forums: Store.forums
   };
 
+  componentDidMount() {
+    Promise.all([
+      fetch("http://localhost:8000/api/posts"),
+      fetch("http://localhost:8000/api/replies")
+    ])
+      .then(([postRes, replyRes]) => {
+        if (!postRes) return postRes.json().then(e => Promise.reject(e));
+        if (!replyRes) return replyRes.json().then(e => Promise.reject(e));
+
+        return Promise.all([postRes.json(), replyRes.json()]);
+      })
+      .then(([posts, replies]) => {
+        this.setState({
+          posts
+        });
+        this.setState({
+          replies
+        });
+      })
+      .catch(error => {
+        console.error({ error });
+      });
+  }
+
   addPostHandle = newPost => {
-    let currentPosts = this.state.store.posts;
+    let currentPosts = this.state.posts;
     let currentPostId = currentPosts[currentPosts.length - 1].id + 1;
     newPost.id = currentPostId;
     currentPosts.push(newPost);
     this.setState({
       store: {
         posts: currentPosts,
-        forums: this.state.store.forums,
-        replies: this.state.store.replies
+        forums: this.state.forums,
+        replies: this.state.replies
       }
     });
   };
 
   addReplyHandle = newReply => {
-    let currentReplies = this.state.store.replies;
+    let currentReplies = this.state.replies;
     let currentReplyId = currentReplies[currentReplies.length - 1].id + 1;
     newReply.id = currentReplyId;
     currentReplies.push(newReply);
@@ -42,46 +68,49 @@ export default class App extends React.Component {
     this.setState({
       store: {
         replies: currentReplies,
-        posts: this.state.store.posts,
-        forums: this.state.store.forums
+        posts: this.state.posts,
+        forums: this.state.forums
       }
     });
   };
 
   deletePostHandle = id => {
-    let updatedPosts = this.state.store.posts.filter(post => post.id !== id);
+    let updatedPosts = this.state.posts.filter(post => post.id !== id);
     this.setState({
-      replies: this.state.store.replies,
+      replies: this.state.replies,
       posts: updatedPosts,
-      forums: this.state.store.forums
+      forums: this.state.forums
     });
   };
 
   updatePost = updatedPost => {
-    const newPosts = this.state.store.posts.map(post =>
+    const newPosts = this.state.posts.map(post =>
       post.id === updatedPost.id ? updatedPost : post
     );
     this.setState({
       posts: newPosts,
-      replies: this.state.store.replies,
-      forums: this.state.store.forums
+      replies: this.state.replies,
+      forums: this.state.forums
     });
   };
 
   updateReply = updatedReply => {
-    const newReplies = this.state.store.replies.map(reply =>
+    const newReplies = this.state.replies.map(reply =>
       reply.id === updatedReply.id ? updatedReply : reply
     );
     this.setState({
       replies: newReplies,
-      posts: this.state.store.posts,
-      forums: this.state.store.forums
+      posts: this.state.posts,
+      forums: this.state.forums
     });
   };
 
   render() {
+    console.log(Store.forums);
     const contextValue = {
-      store: this.state.store,
+      posts: this.state.posts,
+      replies: this.state.replies,
+      forums: this.state.forums,
       addPost: this.addPostHandle,
       addReply: this.addReplyHandle,
       deletePost: this.deletePostHandle,

@@ -137,7 +137,7 @@ export default class AddNewPost extends React.Component {
   }
 
   render() {
-    const { forums = [] } = this.context.store;
+    const { forums = [] } = this.context;
 
     return (
       <div>
