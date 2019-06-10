@@ -28,7 +28,6 @@ export default class AddReplyInput extends React.Component {
 
   addReplyHandle = e => {
     e.preventDefault();
-    console.log("reply button tester");
     const { reply, modified, id, postid } = this.state;
     const newReply = { reply, modified, id, postid };
     fetch(`http://localhost:8000/api/replies`, {

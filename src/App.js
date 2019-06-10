@@ -64,7 +64,6 @@ export default class App extends React.Component {
     let currentReplyId = currentReplies[currentReplies.length - 1].id + 1;
     newReply.id = currentReplyId;
     currentReplies.push(newReply);
-    console.log(currentReplies);
     this.setState({
       store: {
         replies: currentReplies,

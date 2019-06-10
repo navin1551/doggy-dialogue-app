@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { format } from "date-fns";
 import "./Content.css";
 import DoggyContext from "../DoggyContext";
 
@@ -30,9 +31,12 @@ export default class Content extends React.Component {
   };
 
   render() {
+    const { modified } = this.props;
     return (
       <div className="post-content-area">
         <div>{this.props.content}</div>
+        <span>{format(new Date(modified), "MM/DD/YYYY")}</span>
+        <span>{modified}</span>
         <div className="post-button-area">
           <Link to={`/edit-post/${this.props.id}`}>
             <button id="post-edit-button">Edit</button>
