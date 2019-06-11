@@ -6,10 +6,13 @@ import NavBar from "./NavBar";
 import TokenService from "../services/token-service";
 
 export default class Header extends React.Component {
+  handleLogoutClick = () => {
+    TokenService.clearAuthToken();
+  };
   renderLogoutLink() {
     return (
       <div>
-        <Link id="log-out-link" to="/">
+        <Link onClick={this.handleLogoutClick} id="log-out-link" to="/">
           Log Out
         </Link>
       </div>

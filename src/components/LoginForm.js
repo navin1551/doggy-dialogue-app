@@ -9,7 +9,7 @@ export default class LoginForm extends React.Component {
   };
 
   handleSubmitBasicAuth = ev => {
-    ev.preventDefault();
+    //ev.preventDefault();
     const user_name = ev.target.children[1];
     const password = ev.target.children[4];
 
