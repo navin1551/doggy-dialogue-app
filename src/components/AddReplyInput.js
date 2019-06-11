@@ -29,7 +29,7 @@ export default class AddReplyInput extends React.Component {
   addReplyHandle = e => {
     e.preventDefault();
     const { reply, modified, id, postid } = this.state;
-    const newReply = { reply, modified, id, postid };
+    const newReply = { reply, modified, postid };
     fetch(`http://localhost:8000/api/replies`, {
       method: "POST",
       body: JSON.stringify(newReply),
@@ -43,12 +43,13 @@ export default class AddReplyInput extends React.Component {
         }
         return res.json();
       })
+      .then(data => this.context.addReply(data))
       .then(() => {
         this.setState({
           reply: "",
           modified: new Date()
         });
-        this.context.addReply(newReply);
+        //this.context.addReply(newReply);
       })
       .catch(error => {
         console.error({ error });

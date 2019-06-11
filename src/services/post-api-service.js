@@ -1,7 +1,7 @@
-import TokenService from "../services/token-service";
+import TokenService from "./token-service";
 import config from "../config";
 
-const DoggyApiService = {
+const PostApiService = {
   addNewPost(title, content, forumid) {
     return fetch(`${config.API_ENDPOINT}/posts`, {
       method: "POST",
@@ -20,4 +20,4 @@ const DoggyApiService = {
   }
 };
 
-export default DoggyApiService;
+export default PostApiService;

@@ -2,6 +2,7 @@ import React from "react";
 import ValidationError from "../ValidationError";
 import "./AddNewPost.css";
 import DoggyContext from "../DoggyContext";
+import TokenService from "../services/token-service";
 
 export default class AddNewPost extends React.Component {
   constructor(props) {
@@ -54,7 +55,8 @@ export default class AddNewPost extends React.Component {
       method: "POST",
       body: JSON.stringify(newPost),
       headers: {
-        "content-type": "application/json"
+        "content-type": "application/json",
+        authorization: `basic ${TokenService.getAuthToken()}`
       }
     })
       .then(res => {

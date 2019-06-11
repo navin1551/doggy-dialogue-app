@@ -84,6 +84,7 @@ export default class App extends React.Component {
 
   deleteReplyHandle = id => {
     let updatedReplies = this.state.replies.filter(reply => reply.id !== id);
+    console.log(updatedReplies);
     this.setState({
       replies: updatedReplies,
       posts: this.state.posts,

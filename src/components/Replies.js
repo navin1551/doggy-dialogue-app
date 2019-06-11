@@ -10,6 +10,7 @@ export default class Replies extends React.Component {
   replyDeleteHandle = e => {
     e.preventDefault();
     const replyId = this.props.id;
+    console.log(replyId);
 
     fetch(`http://localhost:8000/api/replies/${replyId}`, {
       method: "DELETE",
@@ -18,10 +19,12 @@ export default class Replies extends React.Component {
       }
     })
       .then(res => {
+        console.log(res);
         if (!res.ok) return res.json().then(error => Promise.reject(error));
         return null;
       })
       .then(() => {
+        console.log(replyId);
         this.context.deleteReply(replyId);
       })
       .catch(error => {
