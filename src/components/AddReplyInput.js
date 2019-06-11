@@ -2,6 +2,7 @@ import React from "react";
 import "./AddReplyInput.css";
 import DoggyContext from "../DoggyContext";
 import ValidationError from "../ValidationError";
+import TokenService from "../services/token-service";
 
 export default class AddReplyInput extends React.Component {
   constructor(props) {
@@ -34,7 +35,8 @@ export default class AddReplyInput extends React.Component {
       method: "POST",
       body: JSON.stringify(newReply),
       headers: {
-        "content-type": "application/json"
+        "content-type": "application/json",
+        authorization: `basic ${TokenService.getAuthToken()}`
       }
     })
       .then(res => {
