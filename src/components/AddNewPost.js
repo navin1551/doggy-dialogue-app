@@ -56,7 +56,7 @@ export default class AddNewPost extends React.Component {
       body: JSON.stringify(newPost),
       headers: {
         "content-type": "application/json",
-        authorization: `basic ${TokenService.getAuthToken()}`
+        authorization: `bearer ${TokenService.getAuthToken()}`
       }
     })
       .then(res => {

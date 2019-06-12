@@ -36,7 +36,7 @@ export default class AddReplyInput extends React.Component {
       body: JSON.stringify(newReply),
       headers: {
         "content-type": "application/json",
-        authorization: `basic ${TokenService.getAuthToken()}`
+        authorization: `bearer ${TokenService.getAuthToken()}`
       }
     })
       .then(res => {
