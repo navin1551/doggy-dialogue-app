@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./LoginForm.css";
 import TokenService from "../services/token-service";
+import AuthApiService from "../services/auth-api-service";
 
 export default class LoginForm extends React.Component {
   static defaultProps = {
@@ -9,7 +10,7 @@ export default class LoginForm extends React.Component {
   };
 
   handleSubmitBasicAuth = ev => {
-    //ev.preventDefault();
+    ev.preventDefault();
     const user_name = ev.target.children[1];
     const password = ev.target.children[4];
 
@@ -22,12 +23,31 @@ export default class LoginForm extends React.Component {
     this.props.onLoginSuccess();
   };
 
-  handleSubmitJwtAuth = ev => {};
+  handleSubmitJwtAuth = ev => {
+    ev.preventDefault();
+    this.setState({ error: null });
+    const user_name = ev.target.children[1];
+    const password = ev.target.children[4];
+
+    AuthApiService.postLogin({
+      user_name: user_name.value,
+      password: password.value
+    })
+      .then(res => {
+        user_name.value = "";
+        password.value = "";
+        TokenService.saveAuthToken(res.authToken);
+        this.props.onLoginSuccess();
+      })
+      .catch(res => {
+        this.setState({ error: res.error });
+      });
+  };
 
   render() {
     return (
       <div>
-        <form className="login-form" onSubmit={this.handleSubmitBasicAuth}>
+        <form className="login-form" onSubmit={this.handleSubmitJwtAuth}>
           <label htmlFor="user-name">User Name</label>
           <input type="text" id="user-name" name="user-name" />
           <br />
