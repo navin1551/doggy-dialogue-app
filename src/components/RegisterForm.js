@@ -9,11 +9,12 @@ export default class RegisterForm extends React.Component {
 
   state = { error: null };
 
-  handleSubmit = ev => {
-    ev.preventDefault();
-    //const { user_name, password } = ev.target;
-    const user_name = ev.target.children[1];
-    const password = ev.target.children[4];
+  handleSubmit = e => {
+    e.preventDefault();
+    //const { user_name, password } = e.target;
+    console.log(e.target.children);
+    const user_name = e.target.children[1];
+    const password = e.target.children[5];
     this.setState({ error: null });
     AuthApiService.postUser({
       user_name: user_name.value,
