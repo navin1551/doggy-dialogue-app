@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ForumPosts.css";
 import DoggyContext from "../DoggyContext";
+import TokenService from "../services/token-service";
 import Post from "./Post";
 
 export default class ForumPosts extends React.Component {
@@ -28,9 +29,13 @@ export default class ForumPosts extends React.Component {
       <div className="forum-posts-doggy-picture-area">
         <div>
           <h2>Forum Title</h2>
-          <Link to="/new-post">
-            <button id="new-thread-button">+ New Post</button>
-          </Link>
+          {TokenService.hasAuthToken() ? (
+            <Link to="/new-post">
+              <button id="new-thread-button">+ New Post</button>
+            </Link>
+          ) : (
+            <p id="sign-up-to-post">Login or register to post!</p>
+          )}
         </div>
         <div className="forum-posts-headers">
           <p id="thread">Post</p>

@@ -4,6 +4,7 @@ import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";
 import AddReplyInput from "./AddReplyInput";
+import TokenService from "../services/token-service";
 import "./UserPost.css";
 
 export default class UserPost extends React.Component {
@@ -40,7 +41,11 @@ export default class UserPost extends React.Component {
         <div>{content}</div>
         <div>{postReplies}</div>
         <div>
-          <AddReplyInput postid={postId} />
+          {TokenService.hasAuthToken() ? (
+            <AddReplyInput postid={postId} />
+          ) : (
+            <p id="want-to-reply">Want to reply? Login in or register!</p>
+          )}
         </div>
       </div>
     );

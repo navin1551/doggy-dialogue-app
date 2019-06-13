@@ -31,3 +31,9 @@
   margin-right: 70%;
   margin-top: 10px;
 }
+
+#sign-up-to-post {
+  text-align: left;
+  color: red;
+  font-size: 13px;
+}

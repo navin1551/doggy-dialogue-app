@@ -9,3 +9,9 @@
   position: relative;
   left: 37%;
 }
+
+#want-to-reply {
+  color: red;
+  text-align: center;
+  font-size: 13px;
+}
