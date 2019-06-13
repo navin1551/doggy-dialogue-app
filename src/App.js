@@ -47,8 +47,6 @@ export default class App extends React.Component {
 
   addPostHandle = newPost => {
     let currentPosts = this.state.posts;
-    let currentPostId = currentPosts[currentPosts.length - 1].id + 1;
-    newPost.id = currentPostId;
     currentPosts.push(newPost);
     this.setState({
       store: {
@@ -61,8 +59,6 @@ export default class App extends React.Component {
 
   addReplyHandle = newReply => {
     let currentReplies = this.state.replies;
-    let currentReplyId = currentReplies[currentReplies.length - 1].id + 1;
-    newReply.id = currentReplyId;
     currentReplies.push(newReply);
     this.setState({
       store: {
