@@ -11,7 +11,7 @@ export default class Content extends React.Component {
     e.preventDefault();
     const postId = this.props.id;
 
-    fetch(`http://localhost:8000/api/posts/${postId}`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts/${postId}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json"

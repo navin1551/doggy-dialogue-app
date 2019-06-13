@@ -12,7 +12,7 @@ export default class Replies extends React.Component {
     const replyId = this.props.id;
     console.log(replyId);
 
-    fetch(`http://localhost:8000/api/replies/${replyId}`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/replies/${replyId}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json"

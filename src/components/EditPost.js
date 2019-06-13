@@ -16,7 +16,7 @@ export default class EditPost extends React.Component {
 
   componentDidMount() {
     const postId = this.props.match.params.postId;
-    fetch(`http://localhost:8000/api/posts/${postId}`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts/${postId}`, {
       method: "GET",
       headers: {
         "content-type": "application/json"
@@ -51,7 +51,7 @@ export default class EditPost extends React.Component {
     const { postId } = this.props.match.params;
     const { title, content } = this.state;
     const newPost = { title, content };
-    fetch(`http://localhost:8000/api/posts/${postId}`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts/${postId}`, {
       method: "PATCH",
       body: JSON.stringify(newPost),
       headers: {

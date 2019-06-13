@@ -51,7 +51,7 @@ export default class AddNewPost extends React.Component {
     let { title, content, forumid, modified, id } = this.state;
     forumid = parseInt(forumid);
     const newPost = { title, content, forumid, modified, id };
-    fetch(`http://localhost:8000/api/posts`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts`, {
       method: "POST",
       body: JSON.stringify(newPost),
       headers: {

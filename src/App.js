@@ -23,8 +23,8 @@ export default class App extends React.Component {
 
   componentDidMount() {
     Promise.all([
-      fetch("http://localhost:8000/api/posts"),
-      fetch("http://localhost:8000/api/replies")
+      fetch("https://peaceful-atoll-29792.herokuapp.com/api/posts"),
+      fetch("https://peaceful-atoll-29792.herokuapp.com/api/replies")
     ])
       .then(([postRes, replyRes]) => {
         if (!postRes) return postRes.json().then(e => Promise.reject(e));

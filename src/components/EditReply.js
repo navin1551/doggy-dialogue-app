@@ -15,7 +15,7 @@ export default class EditReply extends React.Component {
 
   componentDidMount() {
     const { replyId } = this.props.match.params;
-    fetch(`http://localhost:8000/api/replies/${replyId}`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/replies/${replyId}`, {
       method: "GET",
       headers: {
         "content-type": "application/json"
@@ -45,7 +45,7 @@ export default class EditReply extends React.Component {
     const { replyId } = this.props.match.params;
     const { reply } = this.state;
     const newReply = { reply };
-    fetch(`http://localhost:8000/api/replies/${replyId}`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/replies/${replyId}`, {
       method: "PATCH",
       body: JSON.stringify(newReply),
       headers: {

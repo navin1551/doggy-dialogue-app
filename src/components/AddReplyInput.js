@@ -31,7 +31,7 @@ export default class AddReplyInput extends React.Component {
     e.preventDefault();
     const { reply, modified, postid } = this.state;
     const newReply = { reply, modified, postid };
-    fetch(`http://localhost:8000/api/replies`, {
+    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/replies`, {
       method: "POST",
       body: JSON.stringify(newReply),
       headers: {
