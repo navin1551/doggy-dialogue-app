@@ -63,7 +63,7 @@ export default class EditPost extends React.Component {
       })
       .then(() => {
         this.context.updatePost(newPost);
-        window.location = "/";
+        window.location = `/post/${postId}`;
       })
       .catch(error => {
         this.setState({ error });

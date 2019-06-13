@@ -34,7 +34,7 @@ export default class Content extends React.Component {
     const { modified } = this.props;
     return (
       <div className="post-content-area">
-        <div>{this.props.content}</div>
+        <div className="post-content">{this.props.content}</div>
         <span>{format(new Date(modified), "MM/DD/YYYY")}</span>
         <span>{modified}</span>
         <div className="post-button-area">

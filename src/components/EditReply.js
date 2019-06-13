@@ -57,7 +57,7 @@ export default class EditReply extends React.Component {
       })
       .then(() => {
         this.context.updateReply(newReply);
-        window.location = "/";
+        window.location = "/forums";
       })
       .catch(error => {
         this.setState({ error });
@@ -65,7 +65,6 @@ export default class EditReply extends React.Component {
   };
 
   render() {
-    console.log(this.props);
     const { reply } = this.state;
     const { postId } = this.props.match.params;
     return (
@@ -85,7 +84,7 @@ export default class EditReply extends React.Component {
         </form>
         <button id="reply-edit-delete-button">Delete</button>
         <Link to={`/post/${postId}`}>
-          <button>Cancel</button>
+          <button id="edit-reply-cancel-button">Cancel</button>
         </Link>
       </section>
     );
