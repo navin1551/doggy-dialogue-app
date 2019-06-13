@@ -10,6 +10,7 @@ export default class AboutUs extends React.Component {
           <h2 className="about-us-header">About Us</h2>
         </div>
         <div className="about-us-content">
+          <p>WELCOME TO DOGGY DIALOGUE!</p>
           <p>
             Who are we at Doggy Dialogue? We are a group of people who love dogs
             and want to establish an active community of dog lovers in the

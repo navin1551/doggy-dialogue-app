@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import "./EditPost.css";
 
@@ -71,6 +72,7 @@ export default class EditPost extends React.Component {
 
   render() {
     const { title, content } = this.state;
+    const { postId } = this.props.match.params;
     return (
       <section>
         <div>
@@ -98,6 +100,9 @@ export default class EditPost extends React.Component {
           </form>
         </div>
         <button id="post-edit-delete-button">Delete</button>
+        <Link to={`/post/${postId}`}>
+          <button id="edit-post-cancel-button">Cancel</button>
+        </Link>
       </section>
     );
   }

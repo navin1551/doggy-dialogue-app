@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import "./EditReply.css";
 
@@ -64,7 +65,9 @@ export default class EditReply extends React.Component {
   };
 
   render() {
+    console.log(this.props);
     const { reply } = this.state;
+    const { postId } = this.props.match.params;
     return (
       <section>
         <div>
@@ -81,6 +84,9 @@ export default class EditReply extends React.Component {
           <button id="reply-edit-save-button">Save</button>
         </form>
         <button id="reply-edit-delete-button">Delete</button>
+        <Link to={`/post/${postId}`}>
+          <button>Cancel</button>
+        </Link>
       </section>
     );
   }
