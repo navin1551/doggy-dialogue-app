@@ -61,7 +61,7 @@ export default class EditPost extends React.Component {
         if (!res.ok) return res.json().then(error => Promise.reject(error));
       })
       .then(() => {
-        this.context.updateNote(newPost);
+        this.context.updatePost(newPost);
         window.location = "/";
       })
       .catch(error => {
