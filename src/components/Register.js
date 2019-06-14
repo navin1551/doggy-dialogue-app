@@ -27,6 +27,8 @@ export default class Register extends React.Component {
           - Administrator has the right to edit all posted content and remove
           any user who violates stated rules
           <br />
+          <br />
+          -Please use the forum responsibly
         </p>
       </div>
     );

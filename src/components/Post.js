@@ -6,7 +6,9 @@ export default class Post extends React.Component {
   render() {
     return (
       <div className="post-titles">
-        <Link to={`/post/${this.props.id}`}>{this.props.title}</Link>
+        <Link id="post-title-links" to={`/post/${this.props.id}`}>
+          {this.props.title}
+        </Link>
       </div>
     );
   }

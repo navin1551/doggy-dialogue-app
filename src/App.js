@@ -14,6 +14,8 @@ import EditReply from "./components/EditReply";
 import config from "./config";
 import Store from "./Store";
 import DoggyContext from "./DoggyContext";
+import LoginForm from "./components/LoginForm";
+import NavBar from "./components/NavBar";
 
 export default class App extends React.Component {
   state = {
@@ -128,6 +130,8 @@ export default class App extends React.Component {
         <div className="app">
           <section>
             <Header />
+            <LoginForm />
+            <NavBar />
           </section>
           <main>
             <Route exact path="/" component={AboutUs} />

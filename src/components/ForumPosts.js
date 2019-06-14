@@ -27,7 +27,7 @@ export default class ForumPosts extends React.Component {
 
     return (
       <div className="forum-posts-doggy-picture-area">
-        <div>
+        <div className="forum-title-area">
           <h2>Forum Title</h2>
           {TokenService.hasAuthToken() ? (
             <Link to="/new-post">

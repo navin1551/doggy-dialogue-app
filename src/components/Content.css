@@ -1,7 +1,7 @@
 .post-content-area {
   border: 1px solid black;
   height: 75px;
-  background-color: lightgrey;
+  background-color: skyblue;
 }
 
 #post-delete-button {
@@ -17,8 +17,4 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-
-.post-content {
-  font-weight: bold;
 }

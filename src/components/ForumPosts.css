@@ -2,6 +2,7 @@
   border: 1px solid black;
   height: 100px;
   text-align: center;
+  background-color: #f3f0f1;
 }
 
 .forum-posts-headers {
@@ -30,4 +31,12 @@
 .forum-post-list {
   list-style: none;
   text-align: left;
+}
+
+.forum-title-area {
+  background-color: #f3f0f1;
+}
+
+h2 {
+  color: navy;
 }

@@ -47,21 +47,40 @@ export default class LoginForm extends React.Component {
       });
   };
 
+  handleLogoutClick = () => {
+    TokenService.clearAuthToken();
+    window.location = "/forums";
+  };
+
+  renderLogoutLink() {
+    return (
+      <div>
+        <Link onClick={this.handleLogoutClick} id="log-out-link" to="/">
+          Log Out
+        </Link>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="login-form-area">
-        <form className="login-form" onSubmit={this.handleSubmitJwtAuth}>
-          <label htmlFor="user-name">User Name</label>
-          <input type="text" id="user-name" name="user-name" />
-          <br />
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" />
-          <br />
-          <Link id="link-register" to={"/register"}>
-            <p id="register-link">Register Here</p>
-          </Link>
-          <button className="login-button">Log In</button>
-        </form>
+        {TokenService.hasAuthToken() ? (
+          this.renderLogoutLink()
+        ) : (
+          <form className="login-form" onSubmit={this.handleSubmitJwtAuth}>
+            <label htmlFor="user-name">User Name</label>
+            <input type="text" id="user-name" name="user-name" />
+            <br />
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" name="password" />
+            <br />
+            <Link id="link-register" to={"/register"}>
+              <p id="register-link">Register Here</p>
+            </Link>
+            <button className="login-button">Log In</button>
+          </form>
+        )}
       </div>
     );
   }

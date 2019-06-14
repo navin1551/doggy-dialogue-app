@@ -28,8 +28,6 @@ export default class Header extends React.Component {
             <h1 id="doggy-dialogue">Doggy Dialogue</h1>
           </Link>
         </div>
-        {TokenService.hasAuthToken() ? this.renderLogoutLink() : <LoginForm />}
-        <NavBar />
       </header>
     );
   }

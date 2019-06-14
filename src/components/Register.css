@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-/*.register-area {
-  margin-right: 7px;
-  margin-left: 7px;
-}*/
+.register-area {
+  background-color: aliceblue;
+}
 
 .register-header-area {
   border: 1px solid black;
