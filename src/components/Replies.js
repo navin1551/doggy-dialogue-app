@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import config from "../config";
 import { format } from "date-fns";
 import "./Replies.css";
 import DoggyContext from "../DoggyContext";
@@ -12,7 +13,7 @@ export default class Replies extends React.Component {
     const replyId = this.props.id;
     console.log(replyId);
 
-    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/replies/${replyId}`, {
+    fetch(`${config.API_ENDPOINT}/replies/${replyId}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json"

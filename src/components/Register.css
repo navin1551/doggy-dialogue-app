@@ -12,3 +12,10 @@
   height: 100px;
   text-align: center;
 }
+
+.register-terms {
+  font-size: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
+  line-height: 15px;
+}

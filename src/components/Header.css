@@ -1,10 +1,15 @@
 .doggy-dialogue-header {
-  border: 1px solid black;
   height: 190px;
 }
 
 #doggy-dialogue {
   font-size: 33px;
+  font-family: Verdana, Geneva, "Lucida", "Lucida Grande", Arial, Helvetica,
+    sans-serif;
+}
+
+.doggy-dialogue-link-area {
+  background-color: lightgrey;
 }
 
 #doggy-dialogue-link {

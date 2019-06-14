@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
+import config from "../config";
 import "./Content.css";
 import DoggyContext from "../DoggyContext";
 
@@ -11,7 +12,7 @@ export default class Content extends React.Component {
     e.preventDefault();
     const postId = this.props.id;
 
-    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts/${postId}`, {
+    fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json"

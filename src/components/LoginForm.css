@@ -3,6 +3,10 @@
   text-align: right;
 }
 
+.login-form-area {
+  background-color: #dbdde7;
+}
+
 #user-name,
 #password {
   border: 1px solid black;

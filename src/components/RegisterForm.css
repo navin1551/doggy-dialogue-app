@@ -16,3 +16,10 @@ input {
   width: 90px;
   text-align: right;
 }
+
+.password-rules {
+  text-align: left;
+  font-size: 10px;
+  margin-left: 10px;
+  line-height: 15px;
+}

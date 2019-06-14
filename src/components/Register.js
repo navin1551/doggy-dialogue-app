@@ -7,26 +7,21 @@ export default class Register extends React.Component {
     return (
       <div className="register-area">
         <div className="register-header-area">
-          <h2 className="register-header">Sign up for full forum access!</h2>
+          <h2 className="register-header">Register</h2>
         </div>
         <RegisterForm />
-        <p>
+        <p className="register-terms">
           By hitting the sign up button you agree to all terms and agreements of
           the site including our rules below:
           <br />
           <br />
-          - No harrassement or bullying of other Doggy Dialogue members
+          - No harrassement or bullying of other forum members
           <br />
           <br />
-          - No negative comments about any dogs or dogs in general. Rule will
-          strictly be enforced!
+          - No negative comments about any dogs or dogs in general.
           <br />
           <br />
-          - No posting of false information (especially in the doggy health
-          forum!!!)
-          <br />
-          <br />
-          - No posts about cats, birds, fishes or anything other weirdos
+          - No posting of false information
           <br />
           <br />
           - Administrator has the right to edit all posted content and remove

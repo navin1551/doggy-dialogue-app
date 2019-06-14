@@ -11,6 +11,7 @@ import UserPost from "./components/UserPost";
 import AddNewPost from "./components/AddNewPost";
 import EditPost from "./components/EditPost";
 import EditReply from "./components/EditReply";
+import config from "./config";
 import Store from "./Store";
 import DoggyContext from "./DoggyContext";
 
@@ -23,8 +24,8 @@ export default class App extends React.Component {
 
   componentDidMount() {
     Promise.all([
-      fetch("https://peaceful-atoll-29792.herokuapp.com/api/posts"),
-      fetch("https://peaceful-atoll-29792.herokuapp.com/api/replies")
+      fetch(`${config.API_ENDPOINT}/posts`),
+      fetch(`${config.API_ENDPOINT}/replies`)
     ])
       .then(([postRes, replyRes]) => {
         if (!postRes) return postRes.json().then(e => Promise.reject(e));

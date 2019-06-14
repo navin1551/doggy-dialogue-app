@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import config from "../config";
 import DoggyContext from "../DoggyContext";
 import "./EditPost.css";
 
@@ -16,7 +17,7 @@ export default class EditPost extends React.Component {
 
   componentDidMount() {
     const postId = this.props.match.params.postId;
-    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts/${postId}`, {
+    fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
       method: "GET",
       headers: {
         "content-type": "application/json"
@@ -51,7 +52,7 @@ export default class EditPost extends React.Component {
     const { postId } = this.props.match.params;
     const { title, content } = this.state;
     const newPost = { title, content };
-    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts/${postId}`, {
+    fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
       method: "PATCH",
       body: JSON.stringify(newPost),
       headers: {

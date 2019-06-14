@@ -7,7 +7,7 @@ export default class ForumList extends React.Component {
   static contextType = DoggyContext;
   render() {
     return (
-      <div>
+      <div className="forum-list">
         <p className="forum-topic">Community Welcome</p>
         <ul>
           <Link to={`/forums/${this.context.forums[0].id}`}>

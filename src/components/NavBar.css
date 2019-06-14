@@ -4,8 +4,12 @@
   list-style: none;
 }
 
-#about-us,
+.nav-bar-area {
+  background-color: #1c425e;
+}
+
 #forums,
 #adoption-and-rescue {
   font-weight: bold;
+  color: white;
 }

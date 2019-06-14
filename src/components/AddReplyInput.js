@@ -1,6 +1,7 @@
 import React from "react";
 import "./AddReplyInput.css";
 import DoggyContext from "../DoggyContext";
+import config from "../config";
 import ValidationError from "../ValidationError";
 import TokenService from "../services/token-service";
 
@@ -31,7 +32,7 @@ export default class AddReplyInput extends React.Component {
     e.preventDefault();
     const { reply, modified, postid } = this.state;
     const newReply = { reply, modified, postid };
-    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/replies`, {
+    fetch(`${config.API_ENDPOINT}/replies`, {
       method: "POST",
       body: JSON.stringify(newReply),
       headers: {

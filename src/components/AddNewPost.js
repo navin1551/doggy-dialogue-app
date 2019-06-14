@@ -1,5 +1,6 @@
 import React from "react";
 import ValidationError from "../ValidationError";
+import config from "../config";
 import "./AddNewPost.css";
 import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";
@@ -51,7 +52,7 @@ export default class AddNewPost extends React.Component {
     let { title, content, forumid, modified, id } = this.state;
     forumid = parseInt(forumid);
     const newPost = { title, content, forumid, modified, id };
-    fetch(`https://peaceful-atoll-29792.herokuapp.com/api/posts`, {
+    fetch(`${config.API_ENDPOINT}/posts`, {
       method: "POST",
       body: JSON.stringify(newPost),
       headers: {

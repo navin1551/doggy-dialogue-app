@@ -23,9 +23,11 @@ export default class Header extends React.Component {
   render() {
     return (
       <header className="doggy-dialogue-header">
-        <Link id="doggy-dialogue-link" to={"/forums"}>
-          <h1 id="doggy-dialogue">Doggy Dialogue</h1>
-        </Link>
+        <div className="doggy-dialogue-link-area">
+          <Link id="doggy-dialogue-link" to={"/forums"}>
+            <h1 id="doggy-dialogue">Doggy Dialogue</h1>
+          </Link>
+        </div>
         {TokenService.hasAuthToken() ? this.renderLogoutLink() : <LoginForm />}
         <NavBar />
       </header>

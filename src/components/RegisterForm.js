@@ -46,7 +46,13 @@ export default class RegisterForm extends React.Component {
         </label>
         <input type="password" id="register-password" name="password" />
         <br />
-        <br />
+        <p className="password-rules">
+          - Password must be between 8 and 72 characters login
+          <br />
+          - Password cannot begin or end with empty spaces
+          <br />- Password must contain 1 upper case, 1 lower case, a number and
+          a special character
+        </p>
         <button className="sign-up-button">Sign up</button>
       </form>
     );

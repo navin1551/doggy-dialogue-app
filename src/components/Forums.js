@@ -9,14 +9,39 @@ export default class Forums extends React.Component {
     return (
       <div>
         <div className="forums-header-area">
-          <h2>Forums</h2>
-          {TokenService.hasAuthToken() ? (
-            <Link to="/new-post">
-              <button id="new-thread-button">+ New Post</button>
-            </Link>
-          ) : (
-            <p id="sign-up-to-post">Login or register to post!</p>
-          )}
+          <div className="about-us-info">
+            <p>
+              Doggy Dialogue is a forum of dog lovers where you can discuss, get
+              answers, help out and participate in all matters related to dogs
+              and puppies
+            </p>
+
+            <div>
+              {TokenService.hasAuthToken() ? (
+                <p>
+                  We invite you to share the joy of dog ownership in our Dog
+                  forum below
+                </p>
+              ) : (
+                <p>
+                  You are currently viewing the site as an unregistered guest.
+                  <br />
+                  <Link to="/register">Register</Link> to:
+                  <br />
+                  -Participate in dog discussions
+                  <br />
+                  -Get answers to your dog and puppy questions
+                  <br />
+                  -Become an active member of Doggy Dialogue
+                </p>
+              )}
+            </div>
+            {TokenService.hasAuthToken() ? (
+              <Link to="/new-post">
+                <button id="new-thread-button">+ New Post</button>
+              </Link>
+            ) : null}
+          </div>
         </div>
         <div className="forum-headers">
           <p id="forum">Forum</p>

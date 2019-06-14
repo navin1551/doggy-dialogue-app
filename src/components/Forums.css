@@ -3,6 +3,8 @@
   justify-content: space-between;
   border: 1px solid black;
   height: 30px;
+  background-color: #1c425e;
+  color: white;
 }
 
 #last-post {
@@ -22,18 +24,27 @@
 
 .forums-header-area {
   border: 1px solid black;
-  height: 100px;
+  height: 120px;
   text-align: center;
+  background-color: #f3f0f1;
 }
 
 #new-thread-button {
   border: 1px solid black;
-  margin-right: 70%;
-  margin-top: 10px;
+  margin-right: 75%;
+  margin-bottom: 10px;
 }
 
 #sign-up-to-post {
   text-align: left;
   color: red;
   font-size: 13px;
+}
+
+.about-us-info {
+  border: 1px solid black;
+  height: 120px;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  line-height: 12px;
 }
