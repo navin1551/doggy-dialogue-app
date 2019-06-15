@@ -1,13 +1,13 @@
 .forum-topic {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bolder;
 }
 
-li {
+.forum-titles {
   font-size: 13px;
   list-style: none;
   color: navy;
-  line-height: 30px;
+  margin-bottom: 1px;
 }
 
 .forum-list {
@@ -16,4 +16,10 @@ li {
 
 span {
   font-size: 10px;
+}
+
+.forum-topic,
+.forum-titles,
+span {
+  margin-left: 3px;
 }

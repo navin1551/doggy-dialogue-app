@@ -33,6 +33,7 @@ export default class Content extends React.Component {
 
   render() {
     const { modified } = this.props;
+    console.log(modified);
     return (
       <div className="post-content-area">
         <div className="post-content">{this.props.content}</div>
