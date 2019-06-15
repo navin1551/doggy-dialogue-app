@@ -28,4 +28,10 @@ textarea {
   border-style: inset;
   border-width: 2px;
   width: 300px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+#edit-title-input {
+  width: 175px;
 }

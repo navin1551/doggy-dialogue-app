@@ -2,14 +2,16 @@
   border: 1px solid black;
   height: 120px;
   text-align: center;
+  background-color: #ec9d66;
 }
 
-.forum-input {
+#forum-input {
   border: 1px solid black;
 }
 
 .new-post-form {
   text-align: center;
+  margin-right: 25px;
 }
 
 #new-post-button {
@@ -19,6 +21,7 @@
 
 #new-post-content {
   border: 1px solid black;
+  height: 50px;
 }
 
 .new-post-labels {
@@ -35,4 +38,15 @@
 
 #forum-selecter {
   border: 1px solid black;
+}
+
+#new-post-title,
+#new-post-content {
+  border-style: inset;
+  border-width: 2px;
+  width: 200px;
+}
+
+.new-post-area {
+  background-color: #f1f0ee;
 }
