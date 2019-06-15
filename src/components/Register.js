@@ -18,7 +18,11 @@ export default class Register extends React.Component {
           - No harrassement or bullying of other forum members
           <br />
           <br />
-          - No negative comments about any dogs or dogs in general.
+          - No negative comments about any dogs or dogs in general
+          <br />
+          <br />
+          - No posts or questions about other pets (cats, birds, rabbits etc.)
+          They have their own forums
           <br />
           <br />
           - No posting of false information

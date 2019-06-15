@@ -49,7 +49,7 @@ export default class UserPost extends React.Component {
         <div className="user-post-header-area">
           <h2>Post Title</h2>
           <Link to={`/forums/${postId}`}>
-            <button id="back-button">Go Back</button>
+            <button id="back-button">Back to forum</button>
           </Link>
         </div>
         <div>{content}</div>

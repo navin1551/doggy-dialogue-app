@@ -80,7 +80,7 @@ export default class LoginForm extends React.Component {
             <input type="password" id="password" name="password" />
             <br />
             <Link id="link-register" to={"/register"}>
-              <p id="register-link">Register Here</p>
+              <p id="register-link">Register</p>
             </Link>
             <button className="login-button">Log In</button>
           </form>

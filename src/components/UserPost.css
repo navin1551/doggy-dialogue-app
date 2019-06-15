@@ -8,7 +8,8 @@
 #back-button {
   border: 1px solid black;
   position: relative;
-  left: 37%;
+  right: 113px;
+  top: 10px;
 }
 
 #want-to-reply {
