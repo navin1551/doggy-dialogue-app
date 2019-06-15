@@ -41,6 +41,32 @@ export default class EditReply extends React.Component {
     this.setState({ reply: e.target.value });
   };
 
+  replyDeleteHandle = e => {
+    e.preventDefault();
+    const { replyId } = this.props.match.params;
+    console.log(replyId);
+
+    fetch(`${config.API_ENDPOINT}/replies/${replyId}`, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+      .then(res => {
+        console.log(res);
+        if (!res.ok) return res.json().then(error => Promise.reject(error));
+        return null;
+      })
+      .then(() => {
+        console.log(replyId);
+        this.context.deleteReply(replyId);
+        window.location = "/forums";
+      })
+      .catch(error => {
+        console.error({ error });
+      });
+  };
+
   handleEditSubmit = e => {
     e.preventDefault();
     const { replyId } = this.props.match.params;
@@ -86,7 +112,9 @@ export default class EditReply extends React.Component {
           />
           <button id="reply-edit-save-button">Save</button>
         </form>
-        <button id="reply-edit-delete-button">Delete</button>
+        <button onClick={this.replyDeleteHandle} id="reply-edit-delete-button">
+          Delete
+        </button>
         <Link to={`/post/${postId}`}>
           <button id="edit-reply-cancel-button">Cancel</button>
         </Link>

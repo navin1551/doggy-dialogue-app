@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import LoginForm from "./LoginForm";
-import NavBar from "./NavBar";
 import TokenService from "../services/token-service";
 
 export default class Header extends React.Component {

@@ -69,10 +69,14 @@ export default class LoginForm extends React.Component {
           this.renderLogoutLink()
         ) : (
           <form className="login-form" onSubmit={this.handleSubmitJwtAuth}>
-            <label htmlFor="user-name">User Name</label>
+            <label id="user-name-login-label" htmlFor="user-name">
+              User Name
+            </label>
             <input type="text" id="user-name" name="user-name" />
             <br />
-            <label htmlFor="password">Password</label>
+            <label id="password-login-label" htmlFor="password">
+              Password
+            </label>
             <input type="password" id="password" name="password" />
             <br />
             <Link id="link-register" to={"/register"}>

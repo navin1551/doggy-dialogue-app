@@ -42,9 +42,6 @@ export default class Content extends React.Component {
           <Link to={`/edit-post/${this.props.id}`}>
             <button id="post-edit-button">Edit</button>
           </Link>
-          <button onClick={this.postDeleteHandle} id="post-delete-button">
-            Delete
-          </button>
         </div>
       </div>
     );

@@ -32,3 +32,9 @@
 #link-register {
   text-decoration: none;
 }
+
+#user-name-login-label,
+#password-login-label {
+  font-size: 10px;
+  font-weight: bold;
+}

@@ -47,6 +47,28 @@ export default class EditPost extends React.Component {
     this.setState({ content: e.target.value });
   };
 
+  postDeleteHandle = e => {
+    e.preventDefault();
+    const { postId } = this.props.match.params;
+    fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+      .then(res => {
+        if (!res.ok) return res.json().then(error => Promise.reject(error));
+        return null;
+      })
+      .then(() => {
+        this.context.deletePost(postId);
+        window.location = "/";
+      })
+      .catch(error => {
+        console.error({ error });
+      });
+  };
+
   handleEditSubmit = e => {
     e.preventDefault();
     const { postId } = this.props.match.params;
@@ -103,7 +125,9 @@ export default class EditPost extends React.Component {
             <button id="post-edit-save-button">Save</button>
           </form>
         </div>
-        <button id="post-edit-delete-button">Delete</button>
+        <button onClick={this.postDeleteHandle} id="post-edit-delete-button">
+          Delete
+        </button>
         <Link to={`/post/${postId}`}>
           <button id="edit-post-cancel-button">Cancel</button>
         </Link>
