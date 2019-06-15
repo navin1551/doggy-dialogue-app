@@ -69,12 +69,15 @@ export default class EditReply extends React.Component {
     const { reply } = this.state;
     const { postId } = this.props.match.params;
     return (
-      <section>
-        <div>
+      <section className="edit-reply-area">
+        <div className="edit-reply-header">
           <h2>Edit Reply</h2>
         </div>
-        <form onSubmit={e => this.handleEditSubmit(e)}>
-          <label htmlFor="reply">Reply</label>
+        <form
+          className="edit-reply-form"
+          onSubmit={e => this.handleEditSubmit(e)}
+        >
+          <label htmlFor="reply">Reply:</label>
           <textarea
             id="edit-reply-input"
             name="edit-reply"

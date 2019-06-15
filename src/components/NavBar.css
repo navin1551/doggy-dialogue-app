@@ -5,11 +5,15 @@
 }
 
 .nav-bar-area {
-  background-color: #1c425e;
+  background-color: #b95b5c;
 }
 
 #forums,
 #adoption-and-rescue {
   font-weight: bold;
   color: white;
+}
+
+#forum-nav-bar-link {
+  text-decoration: none;
 }

@@ -2,7 +2,7 @@
   border: 1px solid black;
   height: 100px;
   text-align: center;
-  background-color: #f3f0f1;
+  background-color: #ec9d66;
 }
 
 .forum-posts-headers {
@@ -11,6 +11,7 @@
   border: 1px solid black;
   height: 30px;
   margin-top: 5px;
+  background-color: #b95b5c;
 }
 
 #last-post {
@@ -22,10 +23,11 @@
 }
 
 #thread,
-#last-post,
+#last-reply,
 #replies {
   font-size: 10px;
   font-weight: bold;
+  color: white;
 }
 
 .forum-post-list {
@@ -34,7 +36,7 @@
 }
 
 .forum-title-area {
-  background-color: #f3f0f1;
+  background-color: #ec9d66;
 }
 
 h2 {

@@ -1,16 +1,14 @@
 .doggy-dialogue-header {
   height: 40px;
-  background-color: lightgrey;
+  background-image: url("https://www.publicdomainpictures.net/download-picture.php?id=13179&check=871d1adfaaead60d91a00af040411e65");
+  background-size: contain;
 }
 
 #doggy-dialogue {
   font-size: 33px;
   font-family: Verdana, Geneva, "Lucida", "Lucida Grande", Arial, Helvetica,
     sans-serif;
-  color: black;
-}
-
-.doggy-dialogue-link-area {
+  color: beige;
 }
 
 #doggy-dialogue-link {

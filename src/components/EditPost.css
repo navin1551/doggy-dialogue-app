@@ -1,8 +1,31 @@
 #post-edit-save-button,
 #post-edit-delete-button {
   border: 1px solid black;
+  width: 100px;
 }
 
 #edit-post-cancel-button {
   border: 1px solid black;
+  width: 100px;
+}
+
+.edit-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-post-header {
+  text-align: center;
+}
+
+.edit-post-area {
+  background-color: #f1f0ee;
+}
+
+#edit-title-input,
+#edit-content-input,
+textarea {
+  border-style: inset;
+  border-width: 2px;
+  width: 300px;
 }

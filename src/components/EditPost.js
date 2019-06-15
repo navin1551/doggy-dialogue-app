@@ -75,12 +75,15 @@ export default class EditPost extends React.Component {
     const { title, content } = this.state;
     const { postId } = this.props.match.params;
     return (
-      <section>
-        <div>
+      <section className="edit-post-area">
+        <div className="edit-post-header">
           <h2>Edit Post</h2>
         </div>
         <div>
-          <form onSubmit={e => this.handleEditSubmit(e)}>
+          <form
+            className="edit-post-form"
+            onSubmit={e => this.handleEditSubmit(e)}
+          >
             <label htmlFor="title">Title:</label>
             <input
               type="text"

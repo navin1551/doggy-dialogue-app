@@ -1,8 +1,23 @@
 #reply-edit-delete-button,
 #reply-edit-save-button {
   border: 1px solid black;
+  width: 100px;
 }
 
 #edit-reply-cancel-button {
   border: 1px solid black;
+  width: 100px;
+}
+
+.edit-reply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-reply-area {
+  background-color: #f1f0ee;
+}
+
+.edit-reply-header {
+  text-align: center;
 }

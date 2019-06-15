@@ -5,7 +5,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer className="footer-area">
-        <p id="nk">NK</p>
+        <p id="nk">2019.NK</p>
       </footer>
     );
   }
