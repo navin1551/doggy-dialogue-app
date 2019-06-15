@@ -48,4 +48,10 @@
   letter-spacing: 0.2px;
   line-height: 12px;
   color: darkblue;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+.about-us-text {
+  margin-right: 2px;
+  margin-left: 2pxl;
 }

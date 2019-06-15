@@ -6,3 +6,10 @@
 .reply-content {
   font-size: 13px;
 }
+
+.reply-border {
+  border: 1px solid black;
+  background-color: #b95b5c;
+  font-size: 5px;
+  color: white;
+}

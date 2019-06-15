@@ -11,6 +11,9 @@
 #post-edit-button {
   border: 1px solid black;
   margin-right: 7px;
+  width: 35px;
+  height: 15px;
+  font-size: 8px;
 }
 
 .post-button-area {
@@ -22,4 +25,11 @@
 .post-content {
   font-weight: bold;
   font-size: 13px;
+}
+
+.content-border {
+  border: 1px solid black;
+  background-color: #b95b5c;
+  font-size: 5px;
+  color: white;
 }

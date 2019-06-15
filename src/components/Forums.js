@@ -10,7 +10,7 @@ export default class Forums extends React.Component {
       <div>
         <div className="forums-header-area">
           <div className="about-us-info">
-            <p>
+            <p className="about-us-text">
               Welcome to Doggy Dialogue! This is forum for dog lovers where you
               can discuss, get answers, help out and participate in all matters
               related to dogs and puppies

@@ -35,8 +35,10 @@ export default class Content extends React.Component {
     const { modified } = this.props;
     return (
       <div className="post-content-area">
+        <div className="content-border">
+          <span className="date">{format(modified, "MM/DD/YYYY")}</span>
+        </div>
         <div className="post-content">{this.props.content}</div>
-        <span>{format(modified, "MM/DD/YYYY")}</span>
         <div className="post-button-area">
           <Link to={`/edit-post/${this.props.id}`}>
             <button id="post-edit-button">Edit</button>
