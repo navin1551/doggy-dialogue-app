@@ -13,6 +13,7 @@ export default class Replies extends React.Component {
       <div className="post-reply-area">
         <div className="reply-border">
           <span>{format(modified, "MM/DD/YYYY")}</span>
+          <span>#</span>
         </div>
         <div className="reply-content">{this.props.reply}</div>
 
