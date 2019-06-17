@@ -46,13 +46,12 @@ export default class AddReplyInput extends React.Component {
         }
         return res.json();
       })
-      .then(data => this.context.addReply(data))
-      .then(() => {
+      .then(data => {
+        this.context.addReply(data);
         this.setState({
           reply: "",
           modified: new Date()
         });
-        //this.context.addReply(newReply);
       })
       .catch(error => {
         console.error({ error });
@@ -94,6 +93,7 @@ export default class AddReplyInput extends React.Component {
             id="add-reply-input"
             name="add-reply-input"
             placeholder="Reply Here"
+            value={this.state.reply}
             onChange={e => this.addReply(e.target.value)}
           />
         </div>
