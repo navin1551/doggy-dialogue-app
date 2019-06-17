@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-import AboutUs from "./components/AboutUs";
 import Register from "./components/Register";
 import Adopt from "./components/Adopt";
 import Footer from "./components/Footer";
@@ -137,9 +136,8 @@ export default class App extends React.Component {
           <main>
             <Switch>
               <ErrorBoundary>
-                <Route exact path="/" component={AboutUs} />
+                <Route exact path="/" component={Forums} />
                 <Route path="/register" component={Register} />
-                <Route exact path="/forums" component={Forums} />
                 <Route path="/adopt" component={Adopt} />
                 <Route path="/forums/:folderId" component={ForumPosts} />
                 <Route path="/post/:postId" component={UserPost} />

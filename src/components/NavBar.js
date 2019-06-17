@@ -7,7 +7,7 @@ export default class NavBar extends React.Component {
     return (
       <div className="nav-bar-area">
         <ul className="nav-bar">
-          <Link id="forum-nav-bar-link" to={"/forums"}>
+          <Link id="forum-nav-bar-link" to={"/"}>
             <li id="forums">Forums</li>
           </Link>
           <Link id="forum-nav-bar-link" to={"/adopt"}>

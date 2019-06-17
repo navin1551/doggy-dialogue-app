@@ -22,7 +22,7 @@ export default class Header extends React.Component {
     return (
       <header className="doggy-dialogue-header">
         <div className="doggy-dialogue-link-area">
-          <Link id="doggy-dialogue-link" to={"/forums"}>
+          <Link id="doggy-dialogue-link" to={"/"}>
             <h1 id="doggy-dialogue">Doggy Dialogue</h1>
           </Link>
         </div>
