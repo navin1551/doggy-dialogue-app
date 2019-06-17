@@ -17,3 +17,9 @@
   text-align: center;
   font-size: 13px;
 }
+
+@media screen and (min-width: 768px) {
+  #back-button {
+    right: 44%;
+  }
+}

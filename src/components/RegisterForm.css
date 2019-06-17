@@ -24,3 +24,20 @@ input {
   margin-left: 10px;
   line-height: 15px;
 }
+
+@media screen and (min-width: 768px) {
+  .register-label {
+    font-size: 16px;
+  }
+
+  #register-user-name,
+  #register-password {
+    width: 180px;
+  }
+
+  .password-rules {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 20%;
+  }
+}

@@ -1,5 +1,5 @@
 .doggy-dialogue-header {
-  height: 40px;
+  height: 60px;
   background-image: url("https://www.publicdomainpictures.net/download-picture.php?id=13179&check=871d1adfaaead60d91a00af040411e65");
   background-size: contain;
 }
@@ -17,4 +17,14 @@
 
 #log-out-link {
   margin-left: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .doggy-dialogue-header {
+    height: 75px;
+  }
+
+  #doggy-dialogue {
+    font-size: 38px;
+  }
 }

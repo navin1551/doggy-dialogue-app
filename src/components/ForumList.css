@@ -23,3 +23,17 @@ span {
 span {
   margin-left: 3px;
 }
+
+@media screen and (min-width: 768px) {
+  .forum-topic {
+    font-size: 15px;
+  }
+
+  .forum-titles {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 11px;
+  }
+}

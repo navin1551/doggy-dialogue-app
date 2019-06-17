@@ -18,3 +18,10 @@
   margin-right: 7px;
   line-height: 15px;
 }
+
+@media screen and (min-width: 768px) {
+  .register-terms {
+    margin-left: 20%;
+    font-size: 12px;
+  }
+}

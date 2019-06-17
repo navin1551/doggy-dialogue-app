@@ -22,6 +22,9 @@ export default class Replies extends React.Component {
             <button id="post-edit-button">Edit</button>
           </Link>
         </div>
+        <div>
+          <span id="reply-author">Author</span>
+        </div>
       </div>
     );
   }

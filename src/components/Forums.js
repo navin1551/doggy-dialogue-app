@@ -18,12 +18,12 @@ export default class Forums extends React.Component {
 
             <div>
               {TokenService.hasAuthToken() ? (
-                <p>
+                <p className="about-us-text">
                   We invite you to share the joy of dog ownership in our Dog
                   forum below
                 </p>
               ) : (
-                <p>
+                <p className="about-us-text">
                   You are currently viewing the site as an unregistered guest.
                   <br />
                   <Link to="/register">Register</Link> to:

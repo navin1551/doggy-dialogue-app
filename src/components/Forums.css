@@ -55,3 +55,28 @@
   margin-right: 2px;
   margin-left: 2pxl;
 }
+
+@media screen and (min-width: 768px) {
+  #forum,
+  #last-post,
+  #posts {
+    font-size: 13px;
+  }
+
+  .forum-headers {
+    height: 35px;
+  }
+
+  .about-us-info {
+    font-size: 12px;
+  }
+
+  .about-us-text {
+    line-height: 13px;
+  }
+
+  #new-thread-button {
+    margin-right: 89%;
+    margin-top: 3%;
+  }
+}

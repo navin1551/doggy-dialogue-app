@@ -45,6 +45,9 @@ export default class Content extends React.Component {
             <button id="post-edit-button">Edit</button>
           </Link>
         </div>
+        <div>
+          <span id="content-author">Author</span>
+        </div>
       </div>
     );
   }

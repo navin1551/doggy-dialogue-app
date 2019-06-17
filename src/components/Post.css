@@ -15,3 +15,17 @@
   margin-left: 5px;
   font-size: 8px;
 }
+
+@media screen and (min-width: 768px) {
+  .post-titles {
+    height: 40px;
+  }
+
+  #post-title-links {
+    font-size: 14px;
+  }
+
+  #post-title-dates {
+    font-size: 10px;
+  }
+}

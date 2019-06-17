@@ -42,3 +42,19 @@
 h2 {
   color: navy;
 }
+
+@media screen and (min-width: 768px) {
+  .forum-posts-headers {
+    height: 35px;
+  }
+
+  #thread,
+  #last-reply,
+  #replies {
+    font-size: 13px;
+  }
+
+  #last-reply {
+    margin-left: 40%;
+  }
+}

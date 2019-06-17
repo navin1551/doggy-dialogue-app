@@ -2,6 +2,7 @@
   border: 1px solid black;
   height: 75px;
   background-color: #f1f0ee;
+  position: relative;
 }
 
 #post-delete-button {
@@ -34,4 +35,34 @@
   color: white;
   display: flex;
   justify-content: space-between;
+}
+
+#content-author {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .post-content-area {
+    height: 100px;
+  }
+
+  #post-edit-button {
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .post-content {
+    font-size: 15px;
+  }
+
+  .post-content-area {
+    position: relative;
+  }
+
+  #content-author {
+    position: absolute;
+    bottom: 0;
+  }
 }

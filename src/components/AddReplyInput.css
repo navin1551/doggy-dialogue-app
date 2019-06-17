@@ -13,3 +13,10 @@
 #reply-button {
   border: 1px solid black;
 }
+
+@media screen and (min-width: 768px) {
+  #add-reply-input {
+    width: 350px;
+    height: 150px;
+  }
+}
