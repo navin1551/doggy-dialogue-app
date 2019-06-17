@@ -16,6 +16,7 @@ import Store from "./Store";
 import DoggyContext from "./DoggyContext";
 import LoginForm from "./components/LoginForm";
 import NavBar from "./components/NavBar";
+import ErrorBoundary from "./ErrorBoundary";
 
 export default class App extends React.Component {
   state = {
@@ -134,15 +135,19 @@ export default class App extends React.Component {
             <NavBar />
           </section>
           <main>
-            <Route exact path="/" component={AboutUs} />
-            <Route path="/register" component={Register} />
-            <Route exact path="/forums" component={Forums} />
-            <Route path="/adopt" component={Adopt} />
-            <Route path="/forums/:folderId" component={ForumPosts} />
-            <Route path="/post/:postId" component={UserPost} />
-            <Route path="/new-post" component={AddNewPost} />
-            <Route path="/edit-post/:postId" component={EditPost} />
-            <Route path="/edit-reply/:replyId" component={EditReply} />
+            <Switch>
+              <ErrorBoundary>
+                <Route exact path="/" component={AboutUs} />
+                <Route path="/register" component={Register} />
+                <Route exact path="/forums" component={Forums} />
+                <Route path="/adopt" component={Adopt} />
+                <Route path="/forums/:folderId" component={ForumPosts} />
+                <Route path="/post/:postId" component={UserPost} />
+                <Route path="/new-post" component={AddNewPost} />
+                <Route path="/edit-post/:postId" component={EditPost} />
+                <Route path="/edit-reply/:replyId" component={EditReply} />
+              </ErrorBoundary>
+            </Switch>
           </main>
           <section>
             <Footer />
