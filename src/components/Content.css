@@ -26,6 +26,8 @@
 .post-content {
   font-weight: bold;
   font-size: 13px;
+  margin-left: 2px;
+  margin-top: 3px;
 }
 
 .content-border {
@@ -55,6 +57,9 @@
 
   .post-content {
     font-size: 15px;
+    position: absolute;
+    top: 25%;
+    left: 5px;
   }
 
   .post-content-area {

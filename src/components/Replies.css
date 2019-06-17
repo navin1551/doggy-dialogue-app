@@ -1,10 +1,13 @@
 .post-reply-area {
   border: 1px solid black;
   background-color: #f1f0ee;
+  position: relative;
 }
 
 .reply-content {
   font-size: 13px;
+  margin-left: 2px;
+  margin-top: 3px;
 }
 
 .reply-border {
@@ -23,6 +26,9 @@
 
   .reply-content {
     font-size: 15px;
+    position: absolute;
+    top: 25%;
+    left: 5px;
   }
 
   .post-reply-area {
