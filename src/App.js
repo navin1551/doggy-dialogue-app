@@ -15,6 +15,7 @@ import Store from "./Store";
 import DoggyContext from "./DoggyContext";
 import LoginForm from "./components/LoginForm";
 import NavBar from "./components/NavBar";
+import NotFoundPage from "./components/NotFoundPage";
 import ErrorBoundary from "./ErrorBoundary";
 
 export default class App extends React.Component {
@@ -144,6 +145,7 @@ export default class App extends React.Component {
                 <Route path="/new-post" component={AddNewPost} />
                 <Route path="/edit-post/:postId" component={EditPost} />
                 <Route path="/edit-reply/:replyId" component={EditReply} />
+                <Route component={NotFoundPage} />
               </ErrorBoundary>
             </Switch>
           </main>
