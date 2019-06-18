@@ -40,7 +40,7 @@ export default class LoginForm extends React.Component {
         password.value = "";
         TokenService.saveAuthToken(res.authToken);
         this.props.onLoginSuccess();
-        window.location = "/forums";
+        window.location = "/";
       })
       .catch(res => {
         this.setState({ error: res.error });
@@ -49,7 +49,7 @@ export default class LoginForm extends React.Component {
 
   handleLogoutClick = () => {
     TokenService.clearAuthToken();
-    window.location = "/forums";
+    window.location = "/";
   };
 
   renderLogoutLink() {

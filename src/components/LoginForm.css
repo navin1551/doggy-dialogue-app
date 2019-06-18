@@ -45,3 +45,27 @@
     width: 100px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #user-name,
+  #password {
+    width: 120px;
+    height: 20px;
+    margin-top: 5px;
+  }
+
+  #user-name-login-label,
+  #password-login-label {
+    font-size: 12px;
+  }
+
+  #register-link {
+    font-size: 12px;
+  }
+
+  .login-button {
+    width: 50px;
+    height: 18px;
+    font-size: 10px;
+  }
+}

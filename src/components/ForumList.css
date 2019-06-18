@@ -37,3 +37,17 @@ span {
     font-size: 11px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .forum-topic {
+    font-size: 22px;
+  }
+
+  .forum-titles {
+    font-size: 22px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+}

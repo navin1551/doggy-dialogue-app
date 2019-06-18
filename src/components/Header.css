@@ -28,3 +28,13 @@
     font-size: 38px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .doggy-dialogue-header {
+    height: 100px;
+  }
+
+  #doggy-dialogue {
+    font-size: 60px;
+  }
+}

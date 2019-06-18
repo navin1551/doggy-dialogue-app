@@ -23,7 +23,6 @@
 }
 
 .forums-header-area {
-  border: 1px solid black;
   height: 120px;
   text-align: center;
   background-color: #ec9d66;
@@ -42,7 +41,6 @@
 }
 
 .about-us-info {
-  border: 1px solid black;
   height: 120px;
   font-size: 10px;
   letter-spacing: 0.2px;
@@ -78,5 +76,27 @@
   #new-thread-button {
     margin-right: 89%;
     margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .forums-header-area {
+    height: 150px;
+  }
+
+  .about-us-info {
+    height: 150px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+  }
+
+  .about-us-text {
+    line-height: 18px;
+  }
+
+  #forum,
+  #last-post,
+  #posts {
+    font-size: 15px;
   }
 }
