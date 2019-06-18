@@ -60,7 +60,7 @@ export default class EditReply extends React.Component {
       .then(() => {
         console.log(replyId);
         this.context.deleteReply(replyId);
-        window.location = "/forums";
+        window.location = "/";
       })
       .catch(error => {
         console.error({ error });
@@ -84,7 +84,7 @@ export default class EditReply extends React.Component {
       })
       .then(() => {
         this.context.updateReply(newReply);
-        window.location = "/forums";
+        window.location = `/`;
       })
       .catch(error => {
         this.setState({ error });

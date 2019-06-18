@@ -162,7 +162,7 @@ export default class App extends React.Component {
               </ScrollToTop>
             </Switch>
           </main>
-          <section>
+          <section className="footer">
             <Footer />
           </section>
         </div>
