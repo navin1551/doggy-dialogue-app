@@ -20,6 +20,7 @@ export default class ForumPosts extends React.Component {
             title={post.title}
             question={post.question}
             modified={post.date_created}
+            forumId={forumId}
           />
         );
       }
@@ -29,7 +30,7 @@ export default class ForumPosts extends React.Component {
     return (
       <div className="forum-posts-doggy-picture-area">
         <div className="forum-title-area">
-          <h2>{this.context.forumTitle}</h2>
+          <h2 className="forum-post-titles">{this.context.forumTitle}</h2>
           {TokenService.hasAuthToken() ? (
             <Link to="/new-post">
               <button id="new-thread-button">+ New Post</button>

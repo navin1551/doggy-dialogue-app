@@ -33,6 +33,7 @@ export default class Content extends React.Component {
 
   render() {
     const { modified } = this.props;
+    console.log(this.props.forumId);
     return (
       <div className="post-content-area">
         <div className="content-border">
@@ -44,7 +45,12 @@ export default class Content extends React.Component {
         </div>
         <div className="post-content">{this.props.content}</div>
         <div className="post-button-area">
-          <Link to={`/edit-post/${this.props.id}`}>
+          <Link
+            to={{
+              pathname: `/edit-post/${this.props.id}`,
+              state: { forumId: this.props.forumId }
+            }}
+          >
             <button id="post-edit-button">Edit</button>
           </Link>
         </div>

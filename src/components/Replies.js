@@ -18,7 +18,12 @@ export default class Replies extends React.Component {
         <div className="reply-content">{this.props.reply}</div>
 
         <div className="post-button-area">
-          <Link to={`/edit-reply/${this.props.id}`}>
+          <Link
+            to={{
+              pathname: `/edit-reply/${this.props.id}`,
+              state: { postId: this.props.postId }
+            }}
+          >
             <button id="post-edit-button">Edit</button>
           </Link>
         </div>

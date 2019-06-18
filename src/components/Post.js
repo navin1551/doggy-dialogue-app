@@ -8,7 +8,13 @@ export default class Post extends React.Component {
     const { modified } = this.props;
     return (
       <div className="post-titles">
-        <Link id="post-title-links" to={`/post/${this.props.id}`}>
+        <Link
+          id="post-title-links"
+          to={{
+            pathname: `/post/${this.props.id}`,
+            state: { forumId: this.props.forumId }
+          }}
+        >
           {this.props.title}
           <br />
           <span id="post-title-dates">{format(modified, "MM/DD/YYYY")}</span>

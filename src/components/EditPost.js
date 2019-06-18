@@ -62,7 +62,7 @@ export default class EditPost extends React.Component {
       })
       .then(() => {
         this.context.deletePost(postId);
-        window.location = "/";
+        window.location = `/forums/${this.props.location.state.forumId}`;
       })
       .catch(error => {
         console.error({ error });
@@ -91,6 +91,10 @@ export default class EditPost extends React.Component {
       .catch(error => {
         this.setState({ error });
       });
+  };
+
+  goBack = () => {
+    this.props.history.goBack();
   };
 
   render() {
@@ -128,9 +132,11 @@ export default class EditPost extends React.Component {
         <button onClick={this.postDeleteHandle} id="post-edit-delete-button">
           Delete
         </button>
-        <Link to={`/post/${postId}`}>
-          <button id="edit-post-cancel-button">Cancel</button>
-        </Link>
+        {/*<Link to={`/post/${postId}`}>*/}
+        <button onClick={this.goBack} id="edit-post-cancel-button">
+          Cancel
+        </button>
+        {/*</Link>*/}
       </section>
     );
   }

@@ -16,6 +16,8 @@ export default class ForumList extends React.Component {
         </Link>
         <span>Introduce yourself to fellow dog lovers</span>
         <br />
+        <span>#</span>
+        <br />
         <br />
         <p className="forum-topic">Keeping and Caring for Dogs</p>
 

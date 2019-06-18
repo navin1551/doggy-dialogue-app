@@ -10,7 +10,12 @@ import "./UserPost.css";
 export default class UserPost extends React.Component {
   static contextType = DoggyContext;
 
+  goBack = () => {
+    this.props.history.goBack();
+  };
+
   render() {
+    console.log(this.props);
     const { replies = [] } = this.context;
 
     let postId = parseInt(this.props.match.params.postId);
@@ -23,6 +28,7 @@ export default class UserPost extends React.Component {
                 id={reply.id}
                 reply={reply.reply}
                 modified={reply.date_commented}
+                postId={postId}
               />
             );
           }
@@ -38,6 +44,7 @@ export default class UserPost extends React.Component {
             content={post.content}
             modified={post.date_created}
             title={post.title}
+            forumId={this.props.location.state.forumId}
           />
         );
       } else {
@@ -48,9 +55,9 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
-          <Link to={`/forums/${postId}`}>
-            <button id="back-button">Back to forum</button>
-          </Link>
+          <button onClick={this.goBack} id="back-button">
+            Back to forum
+          </button>
         </div>
         <div>{content}</div>
         <div>{postReplies}</div>

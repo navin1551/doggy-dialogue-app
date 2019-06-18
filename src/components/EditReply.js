@@ -84,11 +84,16 @@ export default class EditReply extends React.Component {
       })
       .then(() => {
         this.context.updateReply(newReply);
-        window.location = `/`;
+        //this.props.history.push(`/post/${this.props.location.state.postId}`);
+        window.location = `/post/${this.props.location.state.postId}`;
       })
       .catch(error => {
         this.setState({ error });
       });
+  };
+
+  goBack = () => {
+    this.props.history.goBack();
   };
 
   render() {
@@ -115,9 +120,9 @@ export default class EditReply extends React.Component {
         <button onClick={this.replyDeleteHandle} id="reply-edit-delete-button">
           Delete
         </button>
-        <Link to={`/post/${postId}`}>
-          <button id="edit-reply-cancel-button">Cancel</button>
-        </Link>
+        <button onClick={this.goBack} id="edit-reply-cancel-button">
+          Cancel
+        </button>
       </section>
     );
   }

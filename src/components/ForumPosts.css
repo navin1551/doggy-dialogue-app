@@ -1,5 +1,4 @@
 .forum-posts-doggy-picture-area {
-  border: 1px solid black;
   height: 100px;
   text-align: center;
   background-color: #ec9d66;
@@ -41,6 +40,10 @@
 
 h2 {
   color: navy;
+}
+
+.forum-post-titles {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
