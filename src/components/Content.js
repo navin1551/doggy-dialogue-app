@@ -33,7 +33,6 @@ export default class Content extends React.Component {
 
   render() {
     const { modified } = this.props;
-    console.log(this.props.forumId);
     return (
       <div className="post-content-area">
         <div className="content-border">

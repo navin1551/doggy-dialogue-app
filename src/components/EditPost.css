@@ -35,3 +35,18 @@ textarea {
 #edit-title-input {
   width: 175px;
 }
+
+@media screen and (min-width: 768px) {
+  .edit-post-form {
+    align-items: center;
+  }
+
+  .edit-post-buttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #post-edit-save-button {
+    margin-top: 5px;
+  }
+}

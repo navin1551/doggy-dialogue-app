@@ -21,3 +21,18 @@
 .edit-reply-header {
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .edit-reply-form {
+    align-items: center;
+  }
+
+  .edit-reply-buttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #reply-edit-save-button {
+    margin-top: 5px;
+  }
+}

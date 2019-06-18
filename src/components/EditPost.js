@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import config from "../config";
 import DoggyContext from "../DoggyContext";
 import "./EditPost.css";
@@ -129,14 +128,14 @@ export default class EditPost extends React.Component {
             <button id="post-edit-save-button">Save</button>
           </form>
         </div>
-        <button onClick={this.postDeleteHandle} id="post-edit-delete-button">
-          Delete
-        </button>
-        {/*<Link to={`/post/${postId}`}>*/}
-        <button onClick={this.goBack} id="edit-post-cancel-button">
-          Cancel
-        </button>
-        {/*</Link>*/}
+        <div className="edit-post-buttons">
+          <button onClick={this.postDeleteHandle} id="post-edit-delete-button">
+            Delete
+          </button>
+          <button onClick={this.goBack} id="edit-post-cancel-button">
+            Cancel
+          </button>
+        </div>
       </section>
     );
   }

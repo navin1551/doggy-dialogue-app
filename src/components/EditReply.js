@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import config from "../config";
 import DoggyContext from "../DoggyContext";
 import "./EditReply.css";
@@ -117,12 +116,17 @@ export default class EditReply extends React.Component {
           />
           <button id="reply-edit-save-button">Save</button>
         </form>
-        <button onClick={this.replyDeleteHandle} id="reply-edit-delete-button">
-          Delete
-        </button>
-        <button onClick={this.goBack} id="edit-reply-cancel-button">
-          Cancel
-        </button>
+        <div className="edit-reply-buttons">
+          <button
+            onClick={this.replyDeleteHandle}
+            id="reply-edit-delete-button"
+          >
+            Delete
+          </button>
+          <button onClick={this.goBack} id="edit-reply-cancel-button">
+            Cancel
+          </button>
+        </div>
       </section>
     );
   }

@@ -52,6 +52,7 @@
 .about-us-text {
   margin-right: 2px;
   margin-left: 2px;
+  padding-top: 5px;
 }
 
 @media screen and (min-width: 768px) {
