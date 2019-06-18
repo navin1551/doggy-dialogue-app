@@ -29,7 +29,7 @@ export default class ForumPosts extends React.Component {
     return (
       <div className="forum-posts-doggy-picture-area">
         <div className="forum-title-area">
-          <h2>forum title</h2>
+          <h2>{this.context.forumTitle}</h2>
           {TokenService.hasAuthToken() ? (
             <Link to="/new-post">
               <button id="new-thread-button">+ New Post</button>

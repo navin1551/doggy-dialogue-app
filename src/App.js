@@ -23,7 +23,8 @@ export default class App extends React.Component {
   state = {
     posts: [],
     replies: [],
-    forums: Store.forums
+    forums: Store.forums,
+    forumTitle: ""
   };
 
   componentDidMount() {
@@ -115,6 +116,12 @@ export default class App extends React.Component {
     });
   };
 
+  updateForumTitle = e => {
+    this.setState({
+      forumTitle: e.target.innerHTML
+    });
+  };
+
   render() {
     const contextValue = {
       posts: this.state.posts,
@@ -125,8 +132,11 @@ export default class App extends React.Component {
       deletePost: this.deletePostHandle,
       deleteReply: this.deleteReplyHandle,
       updatePost: this.updatePost,
-      updateReply: this.updateReply
+      updateReply: this.updateReply,
+      updateForumTitle: this.updateForumTitle,
+      forumTitle: this.state.forumTitle
     };
+
     return (
       <DoggyContext.Provider value={contextValue}>
         <div className="app">

@@ -39,6 +39,9 @@ export default class Content extends React.Component {
           <span className="date">{format(modified, "MM/DD/YYYY")}</span>
           <span>#</span>
         </div>
+        <div className="post-title-area">
+          <span className="post-title">{this.props.title}</span>
+        </div>
         <div className="post-content">{this.props.content}</div>
         <div className="post-button-area">
           <Link to={`/edit-post/${this.props.id}`}>

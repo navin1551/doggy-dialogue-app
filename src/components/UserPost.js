@@ -37,6 +37,7 @@ export default class UserPost extends React.Component {
             id={post.id}
             content={post.content}
             modified={post.date_created}
+            title={post.title}
           />
         );
       } else {
@@ -47,7 +48,6 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
-          <h2>Post Title</h2>
           <Link to={`/forums/${postId}`}>
             <button id="back-button">Back to forum</button>
           </Link>

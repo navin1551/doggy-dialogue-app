@@ -64,7 +64,8 @@ export default class AddNewPost extends React.Component {
         if (!res.ok) {
           throw new Error("Something went wrong please try again later");
         }
-        return res.json();
+        res.json().then(data => (window.location = `/post/${data.id}`));
+        return;
       })
       .then(() => {
         this.setState({
@@ -74,7 +75,6 @@ export default class AddNewPost extends React.Component {
           modified: new Date()
         });
         this.context.addPost(newPost);
-        window.location = `/forums`;
       })
       .catch(error => {
         console.log(error);
