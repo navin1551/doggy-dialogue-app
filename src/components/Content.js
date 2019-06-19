@@ -75,14 +75,15 @@ export default class Content extends React.Component {
         </div>
         <div className="post-content">{this.props.content}</div>
         <div className="post-button-area">
-          <Link
+          {/*<Link
             to={{
               pathname: `/edit-post/${this.props.id}`,
               state: { forumId: this.props.forumId }
             }}
           >
             <button id="post-edit-button">Edit</button>
-          </Link>
+          </Link>*/}
+          {this.userNameTrue}
         </div>
         <div>
           <span id="content-author">By:{this.props.userName}</span>
