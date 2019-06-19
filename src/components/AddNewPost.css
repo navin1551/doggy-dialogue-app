@@ -19,6 +19,17 @@
   margin-top: 15px;
 }
 
+#new-post-cancel-button {
+  border: 1px solid black;
+  position: absolute;
+  right: 41%;
+  bottom: 0px;
+}
+
+.new-post-cancel-button-area {
+  position: relative;
+}
+
 #new-post-content {
   border: 1px solid black;
   height: 50px;

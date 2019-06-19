@@ -4,8 +4,22 @@ import { format } from "date-fns";
 import config from "../config";
 import "./Content.css";
 import DoggyContext from "../DoggyContext";
+import TokenService from "../services/token-service";
+var jwtDecode = require("jwt-decode");
 
 export default class Content extends React.Component {
+  constructor(props) {
+    super(props);
+    let token = TokenService.getAuthToken();
+    let decoded = jwtDecode(token);
+    console.log(token);
+    console.log(decoded);
+    console.log(decoded.sub);
+    console.log(this.props.userName);
+    this.state = {
+      userName: decoded.sub
+    };
+  }
   static contextType = DoggyContext;
 
   postDeleteHandle = e => {
@@ -31,6 +45,23 @@ export default class Content extends React.Component {
       });
   };
 
+  userNameTrue() {
+    if (this.state.userName === this.props.userName) {
+      return (
+        <Link
+          to={{
+            pathname: `/edit-post/${this.props.id}`,
+            state: { forumId: this.props.forumId }
+          }}
+        >
+          <button id="post-edit-button">Edit</button>
+        </Link>
+      );
+    } else {
+      return null;
+    }
+  }
+
   render() {
     const { modified } = this.props;
     return (
@@ -54,7 +85,7 @@ export default class Content extends React.Component {
           </Link>
         </div>
         <div>
-          <span id="content-author">Author</span>
+          <span id="content-author">By:{this.props.userName}</span>
         </div>
       </div>
     );

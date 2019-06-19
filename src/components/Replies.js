@@ -3,9 +3,39 @@ import { Link } from "react-router-dom";
 import { format } from "date-fns";
 import "./Replies.css";
 import DoggyContext from "../DoggyContext";
+import TokenService from "../services/token-service";
+var jwtDecode = require("jwt-decode");
 
 export default class Replies extends React.Component {
+  /*constructor(props) {
+    super(props);
+    let token = TokenService.getAuthToken();
+    let decoded = jwtDecode(token);
+    console.log(decoded);
+    console.log(token);
+    this.state = {
+      userName: decoded.sub
+    };
+  }*/
+
   static contextType = DoggyContext;
+
+  userNameTrue() {
+    if (this.state.userName === this.props.userName) {
+      return (
+        <Link
+          to={{
+            pathname: `/edit-reply/${this.props.id}`,
+            state: { postId: this.props.postId }
+          }}
+        >
+          <button id="post-edit-button">Edit</button>
+        </Link>
+      );
+    } else {
+      return null;
+    }
+  }
 
   render() {
     const { modified } = this.props;
@@ -28,7 +58,7 @@ export default class Replies extends React.Component {
           </Link>
         </div>
         <div>
-          <span id="reply-author">Author</span>
+          <span id="reply-author">By:{this.props.userName}</span>
         </div>
       </div>
     );

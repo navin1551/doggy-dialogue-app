@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";
@@ -27,6 +28,7 @@ export default class UserPost extends React.Component {
                 reply={reply.reply}
                 modified={reply.date_commented}
                 postId={postId}
+                userName={reply.user_name}
               />
             );
           }
@@ -42,7 +44,8 @@ export default class UserPost extends React.Component {
             content={post.content}
             modified={post.date_created}
             title={post.title}
-            forumId={this.props.location.state.forumId}
+            //forumId={this.props.location.state.forumId}
+            userName={post.user_name}
           />
         );
       } else {
@@ -52,10 +55,8 @@ export default class UserPost extends React.Component {
 
     return (
       <div>
-        <div className="user-post-header-area">
-          <button onClick={this.goBack} id="back-button">
-            Back to forum
-          </button>
+        <div onClick={this.goBack} className="user-post-header-area">
+          <button id="back-button">Back to forum</button>
         </div>
         <div>{content}</div>
         <div>{postReplies}</div>

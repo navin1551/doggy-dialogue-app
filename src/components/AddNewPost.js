@@ -139,6 +139,10 @@ export default class AddNewPost extends React.Component {
     );
   }
 
+  goBack = () => {
+    this.props.history.goBack();
+  };
+
   render() {
     const { forums = [] } = this.context;
 
@@ -203,6 +207,11 @@ export default class AddNewPost extends React.Component {
               <button id="new-post-button">Post</button>
             </div>
           </form>
+          <div className="new-post-cancel-button-area">
+            <button onClick={this.goBack} id="new-post-cancel-button">
+              Cancel
+            </button>
+          </div>
         </div>
       </div>
     );

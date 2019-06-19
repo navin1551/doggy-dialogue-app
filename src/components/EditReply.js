@@ -59,7 +59,7 @@ export default class EditReply extends React.Component {
       .then(() => {
         console.log(replyId);
         this.context.deleteReply(replyId);
-        window.location = "/";
+        window.location = `/post/${this.props.location.state.postId}`;
       })
       .catch(error => {
         console.error({ error });
@@ -83,7 +83,6 @@ export default class EditReply extends React.Component {
       })
       .then(() => {
         this.context.updateReply(newReply);
-        //this.props.history.push(`/post/${this.props.location.state.postId}`);
         window.location = `/post/${this.props.location.state.postId}`;
       })
       .catch(error => {
