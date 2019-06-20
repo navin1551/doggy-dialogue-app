@@ -20,6 +20,7 @@ export default class Content extends React.Component {
       userName: decoded.sub
     };
   }
+
   static contextType = DoggyContext;
 
   postDeleteHandle = e => {
@@ -83,7 +84,7 @@ export default class Content extends React.Component {
           >
             <button id="post-edit-button">Edit</button>
           </Link>*/}
-          {this.userNameTrue}
+          {this.userNameTrue()}
         </div>
         <div>
           <span id="content-author">By:{this.props.userName}</span>

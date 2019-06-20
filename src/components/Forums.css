@@ -32,6 +32,9 @@
   border: 1px solid black;
   margin-right: 75%;
   margin-bottom: 10px;
+  width: 50px;
+  height: 25px;
+  font-size: 10px;
 }
 
 #sign-up-to-post {

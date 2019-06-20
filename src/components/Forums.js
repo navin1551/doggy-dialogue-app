@@ -7,7 +7,7 @@ import TokenService from "../services/token-service";
 export default class Forums extends React.Component {
   render() {
     return (
-      <div>
+      <div className="forum-header-container">
         <div className="forums-header-area">
           <div className="about-us-info">
             <p className="about-us-text">

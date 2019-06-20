@@ -7,7 +7,7 @@ import TokenService from "../services/token-service";
 var jwtDecode = require("jwt-decode");
 
 export default class Replies extends React.Component {
-  /*constructor(props) {
+  constructor(props) {
     super(props);
     let token = TokenService.getAuthToken();
     let decoded = jwtDecode(token);
@@ -16,7 +16,7 @@ export default class Replies extends React.Component {
     this.state = {
       userName: decoded.sub
     };
-  }*/
+  }
 
   static contextType = DoggyContext;
 
@@ -48,14 +48,15 @@ export default class Replies extends React.Component {
         <div className="reply-content">{this.props.reply}</div>
 
         <div className="post-button-area">
-          <Link
+          {/*<Link
             to={{
               pathname: `/edit-reply/${this.props.id}`,
               state: { postId: this.props.postId }
             }}
           >
             <button id="post-edit-button">Edit</button>
-          </Link>
+          </Link>*/}
+          {this.userNameTrue()}
         </div>
         <div>
           <span id="reply-author">By:{this.props.userName}</span>
