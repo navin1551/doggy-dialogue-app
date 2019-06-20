@@ -9,29 +9,6 @@ import TokenService from "../services/token-service";
 export default class Content extends React.Component {
   static contextType = DoggyContext;
 
-  postDeleteHandle = e => {
-    e.preventDefault();
-    const postId = this.props.id;
-
-    fetch(`${config.API_ENDPOINT}/posts/${postId}`, {
-      method: "DELETE",
-      headers: {
-        "content-type": "application/json"
-      }
-    })
-      .then(res => {
-        if (!res.ok) return res.json().then(error => Promise.reject(error));
-        return null;
-      })
-      .then(() => {
-        this.context.deletePost(postId);
-        window.location = "/";
-      })
-      .catch(error => {
-        console.error({ error });
-      });
-  };
-
   userNameTrue() {
     if (TokenService.getUserName() === this.props.userName) {
       return (
@@ -61,17 +38,7 @@ export default class Content extends React.Component {
           <span className="post-title">{this.props.title}</span>
         </div>
         <div className="post-content">{this.props.content}</div>
-        <div className="post-button-area">
-          {/*<Link
-            to={{
-              pathname: `/edit-post/${this.props.id}`,
-              state: { forumId: this.props.forumId }
-            }}
-          >
-            <button id="post-edit-button">Edit</button>
-          </Link>*/}
-          {this.userNameTrue()}
-        </div>
+        <div className="post-button-area">{this.userNameTrue()}</div>
         <div>
           <span id="content-author">By:{this.props.userName}</span>
         </div>

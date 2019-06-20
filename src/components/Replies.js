@@ -6,17 +6,10 @@ import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";
 
 export default class Replies extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      userName: TokenService.getUserName()
-    };
-  }
-
   static contextType = DoggyContext;
 
   userNameTrue() {
-    if (this.state.userName === this.props.userName) {
+    if (TokenService.getUserName() === this.props.userName) {
       return (
         <Link
           to={{
