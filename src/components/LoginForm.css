@@ -5,6 +5,8 @@
 
 .login-form-area {
   background-color: #ec9d66;
+  height: 64px;
+  position: relative;
 }
 
 #user-name,
@@ -37,6 +39,14 @@
 #password-login-label {
   font-size: 10px;
   font-weight: bold;
+}
+
+#doggy-paw {
+  height: 55px;
+  width: 100px;
+  position: absolute;
+  top: 8px;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) {

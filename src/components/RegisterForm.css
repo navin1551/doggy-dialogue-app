@@ -1,7 +1,8 @@
 .registration-form {
-  border: 1px solid black;
   text-align: center;
   background-color: #ec9d66;
+  border: 1px solid black;
+  padding-top: 10px;
 }
 
 input {

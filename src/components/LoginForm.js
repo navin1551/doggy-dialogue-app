@@ -85,6 +85,12 @@ export default class LoginForm extends React.Component {
             <button className="login-button">Log In</button>
           </form>
         )}
+        <div className="doggy-paw-area">
+          <img
+            id="doggy-paw"
+            src="https://purepng.com/public/uploads/large/purepng.com-dog-faceanimalsdog-981524672957y2efm.png"
+          />
+        </div>
       </div>
     );
   }
