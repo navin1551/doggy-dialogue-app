@@ -24,8 +24,7 @@ export default class RegisterForm extends React.Component {
         user_name.value = "";
         password.value = "";
         this.props.onRegistrationSuccess();
-        window.location = "/forums";
-        alert("Account created, please login");
+        window.location = "/";
       })
       .catch(res => {
         this.setState({ error: res.error });
