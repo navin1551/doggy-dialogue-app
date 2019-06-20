@@ -5,22 +5,8 @@ import config from "../config";
 import "./Content.css";
 import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";
-var jwtDecode = require("jwt-decode");
 
 export default class Content extends React.Component {
-  constructor(props) {
-    super(props);
-    let token = TokenService.getAuthToken();
-    let decoded = jwtDecode(token);
-    console.log(token);
-    console.log(decoded);
-    console.log(decoded.sub);
-    console.log(this.props.userName);
-    this.state = {
-      userName: decoded.sub
-    };
-  }
-
   static contextType = DoggyContext;
 
   postDeleteHandle = e => {
@@ -47,7 +33,7 @@ export default class Content extends React.Component {
   };
 
   userNameTrue() {
-    if (this.state.userName === this.props.userName) {
+    if (TokenService.getUserName() === this.props.userName) {
       return (
         <Link
           to={{

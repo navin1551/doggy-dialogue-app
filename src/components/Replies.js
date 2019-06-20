@@ -4,17 +4,12 @@ import { format } from "date-fns";
 import "./Replies.css";
 import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";
-var jwtDecode = require("jwt-decode");
 
 export default class Replies extends React.Component {
   constructor(props) {
     super(props);
-    let token = TokenService.getAuthToken();
-    let decoded = jwtDecode(token);
-    console.log(decoded);
-    console.log(token);
     this.state = {
-      userName: decoded.sub
+      userName: TokenService.getUserName()
     };
   }
 

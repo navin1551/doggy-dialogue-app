@@ -1,4 +1,5 @@
 import config from "../config";
+var jwtDecode = require("jwt-decode");
 
 const TokenService = {
   saveAuthToken(token) {
@@ -15,6 +16,14 @@ const TokenService = {
   },
   makeBasicAuthToken(userName, password) {
     return window.btoa(`${userName}:${password}`);
+  },
+  getUserName() {
+    let token = TokenService.getAuthToken();
+    if (!token) {
+      return "Guest";
+    }
+    let decoded = jwtDecode(token);
+    return decoded.sub;
   }
 };
 
