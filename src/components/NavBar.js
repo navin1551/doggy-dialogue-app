@@ -6,14 +6,30 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div className="nav-bar-area">
-        <ul className="nav-bar">
-          <Link id="forum-nav-bar-link" to={"/"}>
-            <li id="forums">Forums</li>
-          </Link>
-          <Link id="forum-nav-bar-link" to={"/adopt"}>
-            <li id="adoption-and-rescue">Adoption & Rescue</li>
-          </Link>
-        </ul>
+        <img
+          id="navbar-image"
+          src="http://clipart-library.com/images/8iEbG84rT.gif"
+        />
+        <img
+          id="navbar-image"
+          src="http://clipart-library.com/images/8iEbG84rT.gif"
+        />
+        <img
+          id="navbar-image"
+          src="http://clipart-library.com/images/8iEbG84rT.gif"
+        />
+        <img
+          id="navbar-image"
+          src="http://clipart-library.com/images/8iEbG84rT.gif"
+        />
+        <img
+          id="navbar-image"
+          src="http://clipart-library.com/images/8iEbG84rT.gif"
+        />
+        <img
+          id="navbar-image"
+          src="http://clipart-library.com/images/8iEbG84rT.gif"
+        />
       </div>
     );
   }
