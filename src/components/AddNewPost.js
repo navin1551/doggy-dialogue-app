@@ -204,7 +204,9 @@ export default class AddNewPost extends React.Component {
               ))}
             </select>
             <div>
-              <button id="new-post-button">Post</button>
+              <button id="new-post-button" disabled={!this.state.formValid}>
+                Post
+              </button>
             </div>
           </form>
           <div className="new-post-cancel-button-area">

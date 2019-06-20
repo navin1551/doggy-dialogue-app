@@ -102,7 +102,11 @@ export default class AddReplyInput extends React.Component {
           message={this.state.validationMessages.reply}
         />
         <div>
-          <button id="reply-button" onClick={e => this.addReplyHandle(e)}>
+          <button
+            id="reply-button"
+            onClick={e => this.addReplyHandle(e)}
+            disabled={!this.state.formValid}
+          >
             Reply
           </button>
         </div>

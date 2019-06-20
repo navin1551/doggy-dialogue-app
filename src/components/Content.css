@@ -41,6 +41,7 @@
 #content-author {
   position: absolute;
   bottom: 0;
+  font-weight: bold;
 }
 
 .post-title-area {

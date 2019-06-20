@@ -19,6 +19,12 @@
   justify-content: space-between;
 }
 
+#reply-author {
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .post-reply-area {
     height: 100px;
@@ -33,10 +39,5 @@
 
   .post-reply-area {
     position: relative;
-  }
-
-  #reply-author {
-    position: absolute;
-    bottom: 0;
   }
 }
