@@ -162,9 +162,9 @@ export default class App extends React.Component {
               </ScrollToTop>
             </Switch>
           </main>
-          <section className="footer">
+          {/*<section className="footer">
             <Footer />
-          </section>
+    </section>*/}
         </div>
       </DoggyContext.Provider>
     );
