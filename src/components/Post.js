@@ -18,6 +18,7 @@ export default class Post extends React.Component {
           {this.props.title}
           <br />
           <span id="post-title-dates">{format(modified, "MM/DD/YYYY")}</span>
+          <span id="post-title-author">- {this.props.userName}</span>
         </Link>
       </div>
     );

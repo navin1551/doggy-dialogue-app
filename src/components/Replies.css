@@ -1,5 +1,4 @@
 .post-reply-area {
-  border: 1px solid black;
   background-color: #f1f0ee;
   position: relative;
 }
@@ -12,12 +11,12 @@
 }
 
 .reply-border {
-  border: 1px solid black;
   background-color: #b95b5c;
   font-size: 5px;
   color: white;
   display: flex;
   justify-content: space-between;
+  border: 1px solid black;
 }
 
 #reply-author {
@@ -30,6 +29,8 @@
   .reply-content {
     margin-top: 10px;
     font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   #reply-author {

@@ -1,5 +1,4 @@
 .post-content-area {
-  border: 1px solid black;
   background-color: #f1f0ee;
   position: relative;
 }
@@ -30,12 +29,12 @@
 }
 
 .content-border {
-  border: 1px solid black;
   background-color: #b95b5c;
   font-size: 5px;
   color: white;
   display: flex;
   justify-content: space-between;
+  border: 1px solid black;
 }
 
 #content-author {
@@ -72,6 +71,8 @@
   .post-content {
     margin-top: 10px;
     font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   #content-author {

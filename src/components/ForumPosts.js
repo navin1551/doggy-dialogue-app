@@ -20,6 +20,7 @@ export default class ForumPosts extends React.Component {
             question={post.question}
             modified={post.date_created}
             forumId={forumId}
+            userName={post.user_name}
           />
         );
       }

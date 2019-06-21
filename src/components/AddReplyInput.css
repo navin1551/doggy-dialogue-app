@@ -7,7 +7,7 @@
 
 .add-reply {
   text-align: center;
-  margin-top: 20px;
+  border-top: 1px solid black;
 }
 
 #reply-button {

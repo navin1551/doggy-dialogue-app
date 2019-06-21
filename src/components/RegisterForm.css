@@ -14,9 +14,7 @@ input {
 }
 
 .register-label {
-  display: inline-block;
   width: 90px;
-  text-align: right;
 }
 
 .password-rules {
@@ -40,5 +38,16 @@ input {
     font-size: 13px;
     line-height: 20px;
     margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .register-label {
+    font-size: 24px;
+  }
+
+  .password-rules {
+    font-size: 20px;
+    line-height: 25px;
   }
 }

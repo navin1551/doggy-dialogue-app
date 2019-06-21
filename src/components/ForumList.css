@@ -19,11 +19,11 @@ span {
   font-size: 10px;
 }
 
-.forum-topic,
+/*.forum-topic,
 .forum-titles,
 span {
   margin-left: 3px;
-}
+}*/
 
 @media screen and (min-width: 768px) {
   .forum-topic {

@@ -72,9 +72,7 @@ h2 {
   #last-reply {
     margin-left: 40%;
   }
-}
 
-@media screen and (min-width: 768px) {
   .forum-post-titles {
     font-size: 34px;
     padding-top: 50px;
@@ -99,5 +97,9 @@ h2 {
 
   .forum-post-titles {
     font-size: 44px;
+  }
+
+  #new-thread-button {
+    margin-top: -5%;
   }
 }
