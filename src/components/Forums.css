@@ -30,7 +30,7 @@
 
 #new-thread-button {
   border: 1px solid black;
-  margin-right: 75%;
+  margin-right: 80%;
   margin-bottom: 10px;
   width: 50px;
   height: 25px;
@@ -80,8 +80,8 @@
   }
 
   #new-thread-button {
-    margin-right: 89%;
-    margin-top: 3%;
+    margin-right: 93%;
+    margin-top: 18px;
   }
 }
 

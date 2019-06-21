@@ -1,6 +1,5 @@
 .post-content-area {
   border: 1px solid black;
-  height: 95px;
   background-color: #f1f0ee;
   position: relative;
 }
@@ -27,6 +26,7 @@
   font-size: 13px;
   margin-left: 2px;
   margin-top: 6px;
+  margin-bottom: 35px;
 }
 
 .content-border {
@@ -52,21 +52,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .post-content-area {
-    height: 100px;
-  }
-
   #post-edit-button {
     width: 40px;
     height: 20px;
     font-size: 10px;
-  }
-
-  .post-content {
-    font-size: 15px;
-    position: absolute;
-    top: 25%;
-    left: 1px;
   }
 
   .post-content-area {
@@ -76,5 +65,16 @@
   #content-author {
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-content {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+
+  #content-author {
+    font-size: 15px;
   }
 }

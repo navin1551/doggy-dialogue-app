@@ -56,6 +56,7 @@ h2 {
 @media screen and (min-width: 768px) {
   .forum-posts-headers {
     height: 35px;
+    margin-top: 0;
   }
 
   #thread,

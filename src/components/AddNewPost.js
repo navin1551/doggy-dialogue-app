@@ -155,7 +155,7 @@ export default class AddNewPost extends React.Component {
             onSubmit={e => this.postSubmitHandle(e)}
           >
             <div>
-              <h3>New Post</h3>
+              <h3 id="new-post">New Post</h3>
             </div>
             <div>
               <label className="new-post-labels" htmlFor="title">

@@ -29,3 +29,17 @@
     font-size: 10px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .post-titles {
+    height: 70px;
+  }
+
+  #post-title-links {
+    font-size: 20px;
+  }
+
+  #post-title-dates {
+    font-size: 16px;
+  }
+}

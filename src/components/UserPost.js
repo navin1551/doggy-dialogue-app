@@ -56,7 +56,7 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div onClick={this.goBack} className="user-post-header-area">
-          <button id="back-button">Back to forum</button>
+          <button id="back-button">Go Back</button>
         </div>
         <div>{content}</div>
         <div>{postReplies}</div>

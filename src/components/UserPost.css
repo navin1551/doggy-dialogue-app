@@ -8,8 +8,8 @@
 #back-button {
   border: 1px solid black;
   position: relative;
-  right: 113px;
-  top: 10px;
+  right: 115px;
+  top: 75%;
 }
 
 #want-to-reply {
@@ -20,6 +20,12 @@
 
 @media screen and (min-width: 768px) {
   #back-button {
-    right: 44%;
+    right: 45.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #back-button {
+    right: 46.5%;
   }
 }
