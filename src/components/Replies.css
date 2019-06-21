@@ -2,6 +2,7 @@
   background-color: #f1f0ee;
   position: relative;
   border: 1px solid black;
+  overflow-wrap: break-word;
 }
 
 .reply-content {
