@@ -1,6 +1,7 @@
 .post-content-area {
   background-color: #f1f0ee;
   position: relative;
+  border: 1px solid black;
 }
 
 #post-delete-button {
