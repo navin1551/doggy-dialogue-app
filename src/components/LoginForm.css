@@ -1,11 +1,10 @@
 .login-form {
-  border: 1px solid black;
   text-align: right;
 }
 
 .login-form-area {
   background-color: #ec9d66;
-  height: 64px;
+  height: 63px;
   position: relative;
 }
 
@@ -87,9 +86,21 @@
     width: 50px;
     height: 18px;
     font-size: 10px;
+    margin-bottom: 0;
   }
 
   #log-out-link {
     font-size: 18px;
+  }
+
+  .login-form-area {
+    height: 100px;
+  }
+
+  #doggy-paw {
+    height: 130px;
+    width: 230px;
+    left: 3%;
+    bottom: -5%;
   }
 }

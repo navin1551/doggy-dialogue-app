@@ -1,15 +1,16 @@
 .user-post-header-area {
-  border: 1px solid black;
-  height: 100px;
+  height: 70px;
   text-align: center;
   background-color: #ec9d66;
+  position: relative;
 }
 
 #back-button {
   border: 1px solid black;
-  position: relative;
-  right: 115px;
-  top: 75%;
+  position: absolute;
+  left: 1px;
+  bottom: 2px;
+  font-size: 10px;
 }
 
 #want-to-reply {
@@ -19,13 +20,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  #back-button {
-    right: 45.5%;
+  .user-post-header-area {
+    height: 134px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #back-button {
-    right: 46.5%;
+    font-size: 15px;
+  }
+
+  .user-post-header-area {
+    height: 170px;
   }
 }

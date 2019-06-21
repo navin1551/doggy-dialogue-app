@@ -53,6 +53,10 @@ h2 {
   margin-top: 0;
 }
 
+#sign-up-to-post {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .forum-posts-headers {
     height: 35px;
@@ -67,5 +71,33 @@ h2 {
 
   #last-reply {
     margin-left: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .forum-post-titles {
+    font-size: 34px;
+    padding-top: 50px;
+  }
+
+  #sign-up-to-post {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .forum-title-area {
+    height: 170px;
+    position: relative;
+  }
+
+  #sign-up-to-post {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+  }
+
+  .forum-post-titles {
+    font-size: 44px;
   }
 }
