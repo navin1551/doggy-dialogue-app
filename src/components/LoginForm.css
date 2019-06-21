@@ -54,6 +54,19 @@
   right: 0;
 }
 
+.alert-area {
+  position: relative;
+}
+
+.red {
+  position: absolute;
+  bottom: 85px;
+  right: 0;
+  color: red;
+  font-size: 3px;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   #user-name,
   #password {
@@ -62,6 +75,12 @@
 
   #log-out-link {
     font-size: 14px;
+  }
+
+  .red {
+    bottom: 95px;
+    right: 15px;
+    font-size: 10px;
   }
 }
 
@@ -102,5 +121,11 @@
     width: 230px;
     left: 3%;
     bottom: -5%;
+  }
+
+  .red {
+    bottom: 120px;
+    right: 25px;
+    font-size: 15px;
   }
 }

@@ -14,6 +14,7 @@ export default class UserPost extends React.Component {
   };
 
   render() {
+    console.log(this.props);
     const { replies = [] } = this.context;
 
     let postId = parseInt(this.props.match.params.postId);

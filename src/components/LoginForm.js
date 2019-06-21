@@ -63,6 +63,7 @@ export default class LoginForm extends React.Component {
   }
 
   render() {
+    const { error } = this.state;
     return (
       <div className="login-form-area">
         {TokenService.hasAuthToken() ? (
@@ -91,6 +92,9 @@ export default class LoginForm extends React.Component {
             src="https://medivetuk.files.wordpress.com/2013/01/puppies.gif"
             alt="cute corgi"
           />
+        </div>
+        <div className="alert-area" role="alert">
+          {error && <span className="red">{error}</span>}
         </div>
       </div>
     );
