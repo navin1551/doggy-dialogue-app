@@ -44,7 +44,7 @@ export default class UserPost extends React.Component {
             content={post.content}
             modified={post.date_created}
             title={post.title}
-            //forumId={this.props.location.state.forumId}
+            forumId={this.props.location.state.forumId}
             userName={post.user_name}
           />
         );
@@ -55,8 +55,10 @@ export default class UserPost extends React.Component {
 
     return (
       <div>
-        <div onClick={this.goBack} className="user-post-header-area">
-          <button id="back-button">Go Back</button>
+        <div className="user-post-header-area">
+          <button onClick={this.goBack} id="back-button">
+            Go Back
+          </button>
         </div>
         <div>{content}</div>
         <div>{postReplies}</div>
