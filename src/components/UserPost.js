@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";

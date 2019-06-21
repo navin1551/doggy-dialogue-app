@@ -99,7 +99,6 @@ export default class EditPost extends React.Component {
 
   render() {
     const { title, content } = this.state;
-    const { postId } = this.props.match.params;
     return (
       <section className="edit-post-area">
         <div className="edit-post-header">

@@ -77,11 +77,11 @@
 
   .about-us-text {
     line-height: 13px;
+    padding-top: 17px;
   }
 
   #new-thread-button {
-    margin-right: 93%;
-    margin-top: 18px;
+    margin-left: -13%;
   }
 }
 
@@ -104,5 +104,11 @@
   #last-post,
   #posts {
     font-size: 15px;
+  }
+
+  #new-thread-button {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
   }
 }

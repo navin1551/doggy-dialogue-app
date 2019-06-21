@@ -35,17 +35,7 @@ export default class Replies extends React.Component {
         </div>
         <div className="reply-content">{this.props.reply}</div>
 
-        <div className="post-button-area">
-          {/*<Link
-            to={{
-              pathname: `/edit-reply/${this.props.id}`,
-              state: { postId: this.props.postId }
-            }}
-          >
-            <button id="post-edit-button">Edit</button>
-          </Link>*/}
-          {this.userNameTrue()}
-        </div>
+        <div className="post-button-area">{this.userNameTrue()}</div>
         <div>
           <span id="reply-author">By:{this.props.userName}</span>
         </div>

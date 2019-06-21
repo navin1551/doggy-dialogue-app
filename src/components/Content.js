@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
-import config from "../config";
 import "./Content.css";
 import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";

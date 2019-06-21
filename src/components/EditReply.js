@@ -96,7 +96,6 @@ export default class EditReply extends React.Component {
 
   render() {
     const { reply } = this.state;
-    const { postId } = this.props.match.params;
     return (
       <section className="edit-reply-area">
         <div className="edit-reply-header">
