@@ -14,7 +14,6 @@ export default class UserPost extends React.Component {
   };
 
   render() {
-    console.log(this.props);
     const { replies = [] } = this.context;
 
     let postId = parseInt(this.props.match.params.postId);
@@ -44,7 +43,7 @@ export default class UserPost extends React.Component {
             content={post.content}
             modified={post.date_created}
             title={post.title}
-            forumId={this.props.location.state.forumId}
+            //forumId={this.props.location.state.forumId}
             userName={post.user_name}
           />
         );

@@ -4,4 +4,6 @@
 
 .app {
   position: relative;
+  width: 960px;
+  text-align: center;
 }

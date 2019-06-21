@@ -146,9 +146,9 @@ export default class App extends React.Component {
             <NavBar />
           </section>
           <main>
-            <Switch>
-              <ScrollToTop>
-                <ErrorBoundary>
+            <ScrollToTop>
+              <ErrorBoundary>
+                <Switch>
                   <Route exact path="/" component={Forums} />
                   <Route path="/register" component={Register} />
                   <Route path="/adopt" component={Adopt} />
@@ -157,10 +157,10 @@ export default class App extends React.Component {
                   <Route path="/new-post" component={AddNewPost} />
                   <Route path="/edit-post/:postId" component={EditPost} />
                   <Route path="/edit-reply/:replyId" component={EditReply} />
-                  {/*<Route component={NotFoundPage} />*/}
-                </ErrorBoundary>
-              </ScrollToTop>
-            </Switch>
+                  <Route component={NotFoundPage} />
+                </Switch>
+              </ErrorBoundary>
+            </ScrollToTop>
           </main>
           {/*<section className="footer">
             <Footer />
