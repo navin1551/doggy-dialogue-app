@@ -32,6 +32,7 @@ export default class RegisterForm extends React.Component {
   };
 
   render() {
+    const { error } = this.state;
     return (
       <form onSubmit={this.handleSubmit} className="registration-form">
         <label className="register-label" htmlFor="user-name">
@@ -44,6 +45,9 @@ export default class RegisterForm extends React.Component {
           Password:
         </label>
         <input type="password" id="register-password" name="password" />
+        <div role="alert">
+          {error && <p className="red-register">{error}</p>}
+        </div>
         <br />
         <p className="password-rules">
           - Password must be between 8 and 72 characters login
