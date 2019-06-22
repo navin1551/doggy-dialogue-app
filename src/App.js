@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Register from "./components/Register";
 import Adopt from "./components/Adopt";
-import Footer from "./components/Footer";
 import Forums from "./components/Forums";
 import ForumPosts from "./components/ForumPosts";
 import UserPost from "./components/UserPost";
@@ -162,9 +161,6 @@ export default class App extends React.Component {
               </ErrorBoundary>
             </ScrollToTop>
           </main>
-          {/*<section className="footer">
-            <Footer />
-    </section>*/}
         </div>
       </DoggyContext.Provider>
     );

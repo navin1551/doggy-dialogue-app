@@ -11,8 +11,8 @@ export default class AddReplyInput extends React.Component {
     this.state = {
       reply: "",
       modified: new Date(),
-      postid: this.props.postid, //is this okay?
-      formValid: false, //still able to add reply with no content?
+      postid: this.props.postid,
+      formValid: false,
       replyValid: false,
       validationMessages: {
         reply: ""
