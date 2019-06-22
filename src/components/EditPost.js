@@ -61,8 +61,7 @@ export default class EditPost extends React.Component {
       })
       .then(() => {
         this.context.deletePost(postId);
-        //window.location = `/forums/${this.props.location.state.forumId}`;
-        window.location = "/";
+        window.location = `/forums/${this.props.location.state.forumId}`;
       })
       .catch(error => {
         console.error({ error });

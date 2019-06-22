@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";
@@ -43,7 +44,7 @@ export default class UserPost extends React.Component {
             content={post.content}
             modified={post.date_created}
             title={post.title}
-            //forumId={this.props.location.state.forumId}
+            forumId={post.forumid}
             userName={post.user_name}
           />
         );
@@ -58,6 +59,7 @@ export default class UserPost extends React.Component {
           <img
             id="orange-dog"
             src="https://cdn5.eyeem.com/thumb/80bef8692f7243eb39473b70b748f15e701c0d9e-1555717620338/w/850"
+            alt="German Shepard on tree bark"
           />
           <button onClick={this.goBack} id="back-button">
             Go Back
