@@ -1,7 +1,6 @@
 .user-post-header-area {
   height: 70px;
   text-align: center;
-  background-color: #ec9d66;
   position: relative;
 }
 
@@ -17,6 +16,11 @@
   color: red;
   text-align: center;
   font-size: 13px;
+}
+
+#orange-dog {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

@@ -148,7 +148,12 @@ export default class AddNewPost extends React.Component {
 
     return (
       <div>
-        <div className="new-post-header-area" />
+        <div className="new-post-header-area">
+          <p id="new-post-header-quote">
+            "No one can fully understand the meaning of love unless he's owned a
+            dog" -Gene Hill
+          </p>
+        </div>
         <div className="new-post-area">
           <form
             className="new-post-form"

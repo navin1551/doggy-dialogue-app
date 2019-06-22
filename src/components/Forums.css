@@ -34,6 +34,7 @@
   width: 50px;
   height: 25px;
   font-size: 10px;
+  margin-top: 5%;
 }
 
 #sign-up-to-post {
@@ -81,13 +82,14 @@
 
   #new-thread-button {
     margin-left: -9%;
-    margin-top: 3%;
+    margin-top: 4%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .forums-header-area {
     height: 170px;
+    position: relative;
   }
 
   .about-us-info {
@@ -110,5 +112,8 @@
     width: 70px;
     height: 30px;
     font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 95px;
   }
 }

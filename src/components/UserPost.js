@@ -55,6 +55,10 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
+          <img
+            id="orange-dog"
+            src="https://cdn5.eyeem.com/thumb/80bef8692f7243eb39473b70b748f15e701c0d9e-1555717620338/w/850"
+          />
           <button onClick={this.goBack} id="back-button">
             Go Back
           </button>
