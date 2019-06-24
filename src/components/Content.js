@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import "./Content.css";
 import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";
+import PropTypes from "prop-types";
 
 export default class Content extends React.Component {
   static contextType = DoggyContext;
@@ -45,3 +46,11 @@ export default class Content extends React.Component {
     );
   }
 }
+
+Content.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired,
+  forumId: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired
+};

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import { format } from "date-fns";
 import "./Post.css";
 
@@ -24,3 +25,9 @@ export default class Post extends React.Component {
     );
   }
 }
+
+Post.propTypes = {
+  id: PropTypes.number.isRequired,
+  forumId: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired
+};
