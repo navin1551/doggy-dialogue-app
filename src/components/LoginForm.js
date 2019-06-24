@@ -89,7 +89,7 @@ export default class LoginForm extends React.Component {
         <div className="doggy-paw-area">
           <img
             id="doggy-paw"
-            src="https://medivetuk.files.wordpress.com/2013/01/puppies.gif"
+            src="https://unixtitan.net/images/beagle-clipart-transparent-background-2.png"
             alt="cute corgi"
           />
         </div>
