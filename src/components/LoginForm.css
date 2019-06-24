@@ -42,10 +42,10 @@
 
 #doggy-paw {
   height: 60px;
-  width: 130px;
+  width: 120px;
   position: absolute;
   left: 5px;
-  bottom: 5%;
+  bottom: 0%;
 }
 
 #log-out-link {
@@ -67,6 +67,14 @@
   font-weight: bold;
 }
 
+#woof {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  left: 35%;
+  top: 5%;
+}
+
 @media screen and (min-width: 768px) {
   #user-name,
   #password {
@@ -81,6 +89,13 @@
     bottom: 95px;
     right: 15px;
     font-size: 10px;
+  }
+
+  #woof {
+    height: 40px;
+    width: 40px;
+    left: 15%;
+    top: 5%;
   }
 }
 
@@ -120,12 +135,19 @@
     height: 100px;
     width: 180px;
     left: 3%;
-    bottom: 2%;
+    bottom: 0%;
   }
 
   .red {
     bottom: 120px;
     right: 25px;
     font-size: 15px;
+  }
+
+  #woof {
+    height: 50px;
+    width: 50px;
+    left: 18%;
+    top: 5%;
   }
 }
