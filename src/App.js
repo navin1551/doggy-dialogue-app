@@ -17,6 +17,7 @@ import NavBar from "./components/NavBar";
 import ScrollToTop from "./ScrollToTop";
 import NotFoundPage from "./components/NotFoundPage";
 import ErrorBoundary from "./ErrorBoundary";
+import PrivateRoute from "./PrivateRoute";
 
 export default class App extends React.Component {
   state = {
@@ -153,9 +154,15 @@ export default class App extends React.Component {
                   <Route path="/adopt" component={Adopt} />
                   <Route path="/forums/:folderId" component={ForumPosts} />
                   <Route path="/post/:postId" component={UserPost} />
-                  <Route path="/new-post" component={AddNewPost} />
-                  <Route path="/edit-post/:postId" component={EditPost} />
-                  <Route path="/edit-reply/:replyId" component={EditReply} />
+                  <PrivateRoute path="/new-post" component={AddNewPost} />
+                  <PrivateRoute
+                    path="/edit-post/:postId"
+                    component={EditPost}
+                  />
+                  <PrivateRoute
+                    path="/edit-reply/:replyId"
+                    component={EditReply}
+                  />
                   <Route component={NotFoundPage} />
                 </Switch>
               </ErrorBoundary>
