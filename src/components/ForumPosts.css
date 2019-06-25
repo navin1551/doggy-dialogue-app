@@ -9,7 +9,7 @@
   justify-content: space-between;
   border: 1px solid black;
   height: 30px;
-  margin-top: 5px;
+  margin-top: 0;
   background-color: #b95b5c;
 }
 
@@ -36,6 +36,7 @@
 
 .forum-title-area {
   background-color: #ec9d66;
+  position: relative;
 }
 
 h2 {
@@ -55,6 +56,16 @@ h2 {
 
 #sign-up-to-post {
   margin-bottom: 0;
+}
+
+#forum-post-back-button {
+  border: 1px solid black;
+  position: absolute;
+  bottom: 1px;
+  font-size: 12px;
+  left: 0;
+  width: 50px;
+  height: 25px;
 }
 
 @media screen and (min-width: 768px) {
