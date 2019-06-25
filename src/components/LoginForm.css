@@ -40,7 +40,7 @@
   font-weight: bold;
 }
 
-#doggy-paw {
+#doggy-face {
   height: 60px;
   width: 120px;
   position: absolute;
@@ -71,7 +71,7 @@
   height: 35px;
   width: 35px;
   position: absolute;
-  left: 35%;
+  left: 33%;
   top: 5%;
 }
 
@@ -94,7 +94,7 @@
   #woof {
     height: 40px;
     width: 40px;
-    left: 15%;
+    left: 14%;
     top: 5%;
   }
 }
@@ -131,7 +131,7 @@
     height: 100px;
   }
 
-  #doggy-paw {
+  #doggy-face {
     height: 100px;
     width: 180px;
     left: 3%;

@@ -1,7 +1,7 @@
 .doggy-dialogue-header {
   height: 60px;
   background-image: url("https://www.publicdomainpictures.net/download-picture.php?id=13179&check=871d1adfaaead60d91a00af040411e65");
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 #doggy-dialogue {

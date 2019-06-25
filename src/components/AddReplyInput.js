@@ -30,8 +30,8 @@ export default class AddReplyInput extends React.Component {
 
   addReplyHandle = e => {
     e.preventDefault();
-    const { reply, modified, postid } = this.state;
-    const newReply = { reply, modified, postid };
+    const { id, reply, modified, postid } = this.state;
+    const newReply = { id, reply, modified, postid };
     fetch(`${config.API_ENDPOINT}/replies`, {
       method: "POST",
       body: JSON.stringify(newReply),
@@ -47,6 +47,7 @@ export default class AddReplyInput extends React.Component {
         return res.json();
       })
       .then(data => {
+        data.user_name = data.username[0].user_name;
         this.context.addReply(data);
         this.setState({
           reply: "",
