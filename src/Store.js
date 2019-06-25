@@ -734,3 +734,5 @@ export default {
     }
   ]
 };
+
+//this.context.posts.filter(post => post.forumid === forumid).length;
