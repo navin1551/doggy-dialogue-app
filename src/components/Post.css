@@ -20,6 +20,10 @@
   margin-left: 10px;
 }
 
+#reply-total {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .post-titles {
     height: 40px;
