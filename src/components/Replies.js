@@ -28,6 +28,10 @@ export default class Replies extends React.Component {
 
   render() {
     const { modified } = this.props;
+    let replyNumber =
+      this.context.replies.filter(reply => (reply.id = this.props.id)).length +
+      1;
+    console.log(replyNumber);
     return (
       <div className="post-reply-area">
         <div className="reply-border">

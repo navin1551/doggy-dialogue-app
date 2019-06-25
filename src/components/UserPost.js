@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";
@@ -8,10 +9,6 @@ import "./UserPost.css";
 
 export default class UserPost extends React.Component {
   static contextType = DoggyContext;
-
-  goBack = () => {
-    this.props.history.goBack();
-  };
 
   render() {
     const { replies = [] } = this.context;
@@ -55,9 +52,9 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
-          <button onClick={this.goBack} id="back-button">
-            Go Back
-          </button>
+          <Link to={`/`}>
+            <button id="back-button">Go Back</button>
+          </Link>
         </div>
         <div>{content}</div>
         <div>{postReplies}</div>
