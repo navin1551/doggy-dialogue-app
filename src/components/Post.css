@@ -22,6 +22,9 @@
 
 #reply-total {
   font-weight: bold;
+  float: right;
+  margin-right: 10px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -36,6 +39,10 @@
   #post-title-dates {
     font-size: 10px;
   }
+
+  #reply-total {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -48,6 +55,10 @@
   }
 
   #post-title-dates {
+    font-size: 16px;
+  }
+
+  #reply-total {
     font-size: 16px;
   }
 }

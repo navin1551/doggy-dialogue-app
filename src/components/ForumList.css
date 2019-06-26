@@ -9,6 +9,7 @@
   list-style: none;
   color: navy;
   margin-bottom: 1px;
+  margin-left: 2px;
 }
 
 .forum-list {
@@ -16,22 +17,20 @@
 }
 
 span {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .forum-totals {
   font-weight: bold;
+  font-size: 10px;
+  float: right;
+  margin-right: 10px;
 }
-
-/*.forum-topic,
-.forum-titles,
-span {
-  margin-left: 3px;
-}*/
 
 @media screen and (min-width: 768px) {
   .forum-topic {
     font-size: 15px;
+    line-height: 25px;
   }
 
   .forum-titles {
@@ -41,11 +40,16 @@ span {
   span {
     font-size: 11px;
   }
+
+  .forum-totals {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .forum-topic {
     font-size: 22px;
+    line-height: 35px;
   }
 
   .forum-titles {
@@ -53,6 +57,11 @@ span {
   }
 
   span {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .forum-totals {
     font-size: 16px;
   }
 }

@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+#posts {
+  margin-right: 2px;
+}
+
 .forums-header-area {
   height: 130px;
   text-align: center;
@@ -81,7 +85,7 @@
   }
 
   #new-thread-button {
-    margin-left: -9%;
+    margin-left: 93%;
     margin-top: 4%;
   }
 }
@@ -114,6 +118,6 @@
     font-size: 12px;
     position: absolute;
     bottom: 1px;
-    left: 95px;
+    left: 0;
   }
 }

@@ -25,6 +25,7 @@
   position: absolute;
   bottom: 0;
   font-weight: bold;
+  padding-left: 2px;
 }
 
 @media screen and (min-width: 1024px) {

@@ -11,7 +11,8 @@
 
 #post-edit-button {
   border: 1px solid black;
-  margin-right: 7px;
+  margin-right: 1px;
+  margin-bottom: 1px;
   width: 35px;
   height: 15px;
   font-size: 8px;
@@ -26,7 +27,7 @@
 .post-content {
   font-size: 13px;
   margin-left: 2px;
-  margin-top: 6px;
+  margin-top: 3px;
   margin-bottom: 35px;
 }
 
@@ -43,12 +44,17 @@
   position: absolute;
   bottom: 0;
   font-weight: bold;
+  padding-left: 2px;
 }
 
 .post-title-area {
   border-bottom: 1px solid black;
   font-weight: bold;
   font-size: 10px;
+}
+
+.post-title {
+  padding-left: 2px;
 }
 
 @media screen and (min-width: 768px) {
