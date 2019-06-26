@@ -120,4 +120,15 @@
     bottom: 1px;
     left: 0;
   }
+
+  #sign-up-to-post {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #new-thread-button {
+    left: 25px;
+    bottom: 2px;
+  }
 }
