@@ -28,10 +28,18 @@ export default class Replies extends React.Component {
 
   render() {
     const { modified } = this.props;
-    let replyNumber =
+    /*let replyNumber =
       this.context.replies.filter(reply => reply.postid === this.props.postId)
-        .length + 1;
+        .length + 1;*/
+
+    let replyNumber = this.context.replies.map((currElement, index) => {
+      //console.log(index);
+      //console.log(currElement);
+      return index;
+    });
+
     console.log(replyNumber);
+
     return (
       <div className="post-reply-area">
         <div className="reply-border">
