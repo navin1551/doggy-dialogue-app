@@ -32,6 +32,12 @@
   padding-right: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .reply-content {
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .reply-content {
     margin-top: 10px;
