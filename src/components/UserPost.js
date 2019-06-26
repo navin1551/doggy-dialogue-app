@@ -14,6 +14,7 @@ export default class UserPost extends React.Component {
     const { replies = [] } = this.context;
 
     let postId = parseInt(this.props.match.params.postId);
+    let count = 1;
     let postReplies = this.props.match.params.hasOwnProperty("postId")
       ? replies.map(reply => {
           if (reply.postid === postId) {
@@ -25,6 +26,7 @@ export default class UserPost extends React.Component {
                 modified={reply.date_commented}
                 postId={postId}
                 userName={reply.user_name}
+                count={(count += 1)}
               />
             );
           }
