@@ -28,6 +28,10 @@
   padding-left: 2px;
 }
 
+.reply-number {
+  padding-right: 5px;
+}
+
 @media screen and (min-width: 1024px) {
   .reply-content {
     margin-top: 10px;

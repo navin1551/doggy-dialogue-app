@@ -32,7 +32,7 @@ export default class Content extends React.Component {
       <div className="post-content-area">
         <div className="content-border">
           <span className="date">{format(modified, "MM/DD/YYYY")}</span>
-          <span>#1</span>
+          <span className="content-one">#1</span>
         </div>
         <div className="post-title-area">
           <span className="post-title">{this.props.title}</span>

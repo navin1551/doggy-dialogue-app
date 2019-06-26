@@ -21,6 +21,10 @@
   margin-left: 5px;
 }
 
+#replies {
+  margin-right: 3px;
+}
+
 #thread,
 #last-reply,
 #replies {
