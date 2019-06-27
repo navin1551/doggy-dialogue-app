@@ -44,7 +44,7 @@ export default class ForumPosts extends React.Component {
         </div>
         <div className="forum-posts-headers">
           <p id="thread">Post</p>
-          <p id="last-reply">Last reply</p>
+          {/*<p id="last-reply">Last reply</p>*/}
           <p id="replies">Replies</p>
         </div>
         <div className="forum-post-list">

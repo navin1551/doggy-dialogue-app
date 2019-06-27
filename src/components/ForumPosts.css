@@ -87,6 +87,10 @@ h2 {
     font-size: 13px;
   }
 
+  #replies {
+    margin-right: 10px;
+  }
+
   #last-reply {
     margin-left: 40%;
   }
@@ -121,5 +125,9 @@ h2 {
   #new-thread-button {
     margin-top: -5%;
     -webkit-appearance: none;
+  }
+
+  #replies {
+    margin-right: 40px;
   }
 }

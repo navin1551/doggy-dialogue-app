@@ -43,6 +43,7 @@ span {
 
   .forum-totals {
     font-size: 12px;
+    margin-right: 35px;
   }
 }
 
@@ -63,5 +64,6 @@ span {
 
   .forum-totals {
     font-size: 16px;
+    margin-right: 16%;
   }
 }
