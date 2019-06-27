@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Register from "./components/Register";
-import Adopt from "./components/Adopt";
 import Forums from "./components/Forums";
 import ForumPosts from "./components/ForumPosts";
 import UserPost from "./components/UserPost";
@@ -151,7 +150,6 @@ export default class App extends React.Component {
                 <Switch>
                   <Route exact path="/" component={Forums} />
                   <Route path="/register" component={Register} />
-                  <Route path="/adopt" component={Adopt} />
                   <Route path="/forums/:folderId" component={ForumPosts} />
                   <Route path="/post/:postId" component={UserPost} />
                   <PrivateRoute path="/new-post" component={AddNewPost} />

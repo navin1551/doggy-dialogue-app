@@ -6,6 +6,7 @@ import DoggyContext from "../DoggyContext";
 export default class ForumList extends React.Component {
   static contextType = DoggyContext;
   render() {
+    // total number of posts in each forum
     let introTotal = this.context.posts.filter(post => post.forumid === 1)
       .length;
     let dgTotal = this.context.posts.filter(post => post.forumid === 2).length;

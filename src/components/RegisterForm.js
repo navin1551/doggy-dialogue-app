@@ -11,7 +11,6 @@ export default class RegisterForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    //const { user_name, password } = e.target;
     console.log(e.target.children);
     const user_name = e.target.children[1];
     const password = e.target.children[5];
