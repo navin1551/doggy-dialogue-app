@@ -89,13 +89,8 @@ export default class LoginForm extends React.Component {
         <div className="doggy-paw-area">
           <img
             id="doggy-face"
-            src="https://clipart.info/images/ccovers/1503688586dog%20face%20png%20really%20cute.png"
+            src="http://pluspng.com/img-png/cute-puppies-png-black-and-white-pin-pets-clipart-outline-8-black-and-white-png-pets-1969.png"
             alt="dog face"
-          />
-          <img
-            src="https://pngimage.net/wp-content/uploads/2018/06/woof-png.png"
-            alt="woof"
-            id="woof"
           />
         </div>
         <div className="alert-area" role="alert">

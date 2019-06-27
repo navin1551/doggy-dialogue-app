@@ -73,6 +73,17 @@ h2 {
   -webkit-appearance: none;
 }
 
+#new-thread-button {
+  position: relative;
+  bottom: 36px;
+  border: 1px solid black;
+  background-color: darkgrey;
+  -webkit-appearance: none;
+  bottom: 6px;
+  margin-left: 75%;
+  font-size: 12px;
+}
+
 @media screen and (min-width: 768px) {
   .forum-posts-headers {
     height: 35px;
@@ -109,6 +120,11 @@ h2 {
   .forum-title-area {
     height: 120px;
   }
+
+  #new-thread-button {
+    bottom: 3px;
+    right: -55px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -130,8 +146,9 @@ h2 {
   }
 
   #new-thread-button {
-    margin-top: -5%;
     -webkit-appearance: none;
+    top: 12px;
+    right: -85px;
   }
 
   #replies {

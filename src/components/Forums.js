@@ -37,7 +37,7 @@ export default class Forums extends React.Component {
             </div>
             {TokenService.hasAuthToken() ? (
               <Link to="/new-post">
-                <button id="new-thread-button">+New Post</button>
+                <button id="forum-new-thread-button">+New Post</button>
               </Link>
             ) : null}
           </div>
