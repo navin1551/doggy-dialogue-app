@@ -33,14 +33,17 @@
   .forum-topic {
     font-size: 15px;
     line-height: 25px;
+    margin-left: 10px;
   }
 
   .forum-titles {
     font-size: 14px;
+    margin-left: 12px;
   }
 
   .forum-info {
     font-size: 11px;
+    margin-left: 12px;
   }
 
   .forum-totals {
@@ -66,6 +69,6 @@
 
   .forum-totals {
     font-size: 16px;
-    margin-right: 16%;
+    margin-right: 13%;
   }
 }

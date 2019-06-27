@@ -55,7 +55,7 @@ export default class UserPost extends React.Component {
       <div>
         <div className="user-post-header-area">
           <Link to={`/`}>
-            <button id="back-button">Go Back</button>
+            <button id="back-button">Back</button>
           </Link>
         </div>
         <div>{content}</div>

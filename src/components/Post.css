@@ -37,8 +37,12 @@
     font-size: 14px;
   }
 
+  #post-title-author {
+    font-size: 11px;
+  }
+
   #post-title-dates {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   #reply-total {
@@ -53,15 +57,19 @@
   }
 
   #post-title-links {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   #post-title-dates {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  #post-title-author {
+    font-size: 18px;
   }
 
   #reply-total {
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 55px;
   }
 }
