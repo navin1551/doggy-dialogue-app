@@ -4,7 +4,7 @@
 
 .login-form-area {
   background-color: #ec9d66;
-  height: 63px;
+  height: 70px;
   position: relative;
 }
 
@@ -22,12 +22,16 @@
   font-size: 8px;
   margin-right: 5px;
   margin-bottom: 3px;
+  -webkit-appearance: none;
+  padding-bottom: 5px;
+  background-color: darkgrey;
 }
 
 #register-link {
   font-size: 10px;
   display: inline;
   margin-right: 5px;
+  padding-bottom: 5px;
 }
 
 #link-register {

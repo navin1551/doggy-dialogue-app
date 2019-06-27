@@ -2,11 +2,13 @@
 #post-edit-delete-button {
   border: 1px solid black;
   width: 100px;
+  background-color: darkgrey;
 }
 
 #edit-post-cancel-button {
   border: 1px solid black;
   width: 100px;
+  background-color: darkgrey;
 }
 
 .edit-post-form {

@@ -2,11 +2,13 @@
 #reply-edit-save-button {
   border: 1px solid black;
   width: 100px;
+  background-color: darkgrey;
 }
 
 #edit-reply-cancel-button {
   border: 1px solid black;
   width: 100px;
+  background-color: darkgrey;
 }
 
 .edit-reply-form {

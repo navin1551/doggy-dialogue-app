@@ -18,6 +18,7 @@
   border: 1px solid black;
   margin-top: 15px;
   width: 65px;
+  background-color: darkgrey;
 }
 
 #new-post-cancel-button {
@@ -26,6 +27,7 @@
   right: 20%;
   bottom: 0px;
   width: 65px;
+  background-color: darkgrey;
 }
 
 .new-post-cancel-button-area {

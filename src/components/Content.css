@@ -7,6 +7,7 @@
 
 #post-delete-button {
   border: 1px solid black;
+  background-color: darkgrey;
 }
 
 #post-edit-button {
@@ -16,6 +17,7 @@
   width: 35px;
   height: 15px;
   font-size: 8px;
+  background-color: darkgrey;
 }
 
 .post-button-area {
