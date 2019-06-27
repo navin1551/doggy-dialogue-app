@@ -2,6 +2,7 @@
   font-size: 13px;
   font-weight: bolder;
   margin-top: 0;
+  margin-left: 1px;
 }
 
 .forum-titles {
@@ -9,15 +10,16 @@
   list-style: none;
   color: navy;
   margin-bottom: 1px;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .forum-list {
   background-color: #f1f0ee;
 }
 
-span {
+.forum-info {
   font-size: 8px;
+  margin-left: 4px;
 }
 
 .forum-totals {
@@ -37,7 +39,7 @@ span {
     font-size: 14px;
   }
 
-  span {
+  .forum-info {
     font-size: 11px;
   }
 
@@ -57,7 +59,7 @@ span {
     font-size: 20px;
   }
 
-  span {
+  .forum-info {
     font-size: 16px;
     line-height: 35px;
   }

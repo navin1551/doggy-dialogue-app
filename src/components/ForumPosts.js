@@ -38,9 +38,7 @@ export default class ForumPosts extends React.Component {
             <Link to="/new-post">
               <button id="new-thread-button">+ New Post</button>
             </Link>
-          ) : (
-            <p id="sign-up-to-post">Login or register to post!</p>
-          )}
+          ) : null}
         </div>
         <div className="forum-posts-headers">
           <p id="thread">Post</p>

@@ -26,15 +26,34 @@
   bottom: 0;
   font-weight: bold;
   padding-left: 2px;
+  font-size: 8px;
 }
 
 .reply-number {
   padding-right: 5px;
+  font-size: 8px;
+}
+
+.reply-date {
+  font-size: 8px;
+  margin-left: 2px;
 }
 
 @media screen and (min-width: 768px) {
   .reply-content {
     font-size: 16px;
+  }
+
+  .reply-number {
+    font-size: 11px;
+  }
+
+  .reply-date {
+    font-size: 11px;
+  }
+
+  #reply-author {
+    font-size: 11px;
   }
 }
 
@@ -47,6 +66,14 @@
   }
 
   #reply-author {
-    font-size: 15px;
+    font-size: 17px;
+  }
+
+  .reply-date {
+    font-size: 17px;
+  }
+
+  .reply-number {
+    font-size: 17px;
   }
 }
