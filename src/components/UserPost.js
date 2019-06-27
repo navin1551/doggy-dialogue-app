@@ -9,7 +9,6 @@ import "./UserPost.css";
 
 export default class UserPost extends React.Component {
   static contextType = DoggyContext;
-
   render() {
     const { replies = [] } = this.context;
 
@@ -50,7 +49,6 @@ export default class UserPost extends React.Component {
         return null;
       }
     });
-
     return (
       <div>
         <div className="user-post-header-area">

@@ -81,7 +81,7 @@ h2 {
   -webkit-appearance: none;
   bottom: 6px;
   margin-left: 75%;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 @media screen and (min-width: 768px) {
@@ -123,7 +123,7 @@ h2 {
 
   #new-thread-button {
     bottom: 3px;
-    right: -55px;
+    right: -59px;
   }
 }
 
@@ -148,7 +148,7 @@ h2 {
   #new-thread-button {
     -webkit-appearance: none;
     top: 12px;
-    right: -85px;
+    right: -90px;
   }
 
   #replies {
