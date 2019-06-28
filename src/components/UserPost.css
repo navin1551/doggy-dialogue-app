@@ -31,6 +31,10 @@
   .user-post-header-area {
     height: 134px;
   }
+
+  #want-to-reply {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -40,5 +44,9 @@
 
   .user-post-header-area {
     height: 170px;
+  }
+
+  #want-to-reply {
+    font-size: 18px;
   }
 }
