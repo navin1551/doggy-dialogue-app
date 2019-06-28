@@ -4,7 +4,7 @@ import "./NavBar.css";
 export default class NavBar extends React.Component {
   render() {
     return (
-      <div className="nav-bar-area">
+      <nav className="nav-bar-area">
         <img
           id="navbar-image"
           src="http://clipart-library.com/images/8iEbG84rT.gif"
@@ -35,7 +35,7 @@ export default class NavBar extends React.Component {
           src="http://clipart-library.com/images/8iEbG84rT.gif"
           alt="white dog paws"
         />
-      </div>
+      </nav>
     );
   }
 }
