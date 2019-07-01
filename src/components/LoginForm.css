@@ -1,9 +1,9 @@
 .login-form {
   text-align: right;
+  padding-top: 5px;
 }
 
 .login-form-area {
-  background-color: #ec9d66;
   height: 70px;
   position: relative;
 }
@@ -40,22 +40,15 @@
 
 #user-name-login-label,
 #password-login-label {
-  font-size: 10px;
-  font-weight: bold;
-}
-
-#doggy-face {
-  height: 60px;
-  width: 120px;
-  position: absolute;
-  left: 5px;
-  bottom: 0%;
+  font-size: 8px;
+  font-weight: bolder;
 }
 
 #log-out-link {
   font-size: 10px;
   position: absolute;
-  right: 5px;
+  right: 20px;
+  padding-top: 5px;
 }
 
 .alert-area {
@@ -112,6 +105,9 @@
     width: 40px;
     left: 14%;
     top: 5%;
+  }
+  .login-form {
+    padding-right: 10px;
   }
 }
 

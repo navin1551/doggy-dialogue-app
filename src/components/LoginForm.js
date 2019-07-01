@@ -86,13 +86,6 @@ export default class LoginForm extends React.Component {
             <button className="login-button">Log In</button>
           </form>
         )}
-        <div className="doggy-paw-area">
-          <img
-            id="doggy-face"
-            src="http://pluspng.com/img-png/cute-puppies-png-black-and-white-pin-pets-clipart-outline-8-black-and-white-png-pets-1969.png"
-            alt="dog face"
-          />
-        </div>
         <div className="alert-area" role="alert">
           {error && <span className="red">{error}</span>}
         </div>

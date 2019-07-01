@@ -1,15 +1,15 @@
 .doggy-dialogue-header {
-  height: 60px;
-  background-image: url("https://www.publicdomainpictures.net/download-picture.php?id=13179&check=871d1adfaaead60d91a00af040411e65");
+  height: 80px;
+  background-color: #9396ff;
   background-size: 100% 100%;
 }
 
 #doggy-dialogue {
-  font-size: 33px;
+  font-size: 28px;
   font-family: impact;
   color: beige;
-  margin-left: 3px;
   margin-top: 0;
+  padding-top: 20px;
 }
 
 #doggy-dialogue-link {
@@ -20,6 +20,12 @@
   margin-left: 80%;
 }
 
+.doggy-dialogue-link-area {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .doggy-dialogue-header {
     height: 75px;
@@ -27,6 +33,7 @@
 
   #doggy-dialogue {
     font-size: 38px;
+    padding-left: 15px;
   }
 }
 

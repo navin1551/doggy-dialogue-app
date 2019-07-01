@@ -29,10 +29,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .post-titles {
-    height: 40px;
-  }
-
   #post-title-links {
     font-size: 14px;
   }
@@ -52,10 +48,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .post-titles {
-    height: 70px;
-  }
-
   #post-title-links {
     font-size: 22px;
   }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import TokenService from "../services/token-service";
+import LoginForm from "./LoginForm";
 
 export default class Header extends React.Component {
   handleLogoutClick = () => {
@@ -23,8 +24,9 @@ export default class Header extends React.Component {
       <header className="doggy-dialogue-header">
         <div className="doggy-dialogue-link-area">
           <Link id="doggy-dialogue-link" to={"/"}>
-            <h1 id="doggy-dialogue">Doggy Dialogue</h1>
+            <p id="doggy-dialogue">Doggy Dialogue</p>
           </Link>
+          <LoginForm />
         </div>
       </header>
     );

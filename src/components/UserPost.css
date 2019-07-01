@@ -1,9 +1,8 @@
 .user-post-header-area {
-  height: 70px;
   text-align: center;
   position: relative;
   background-color: #ec9d66;
-  background-image: url("https://rlv.zcache.co.uk/rescue_dog_cartoon_square_wall_clock-r708718b0ebb44618a16ca98d3829b932_fup1y_8byvr_307.jpg?rvtype=content");
+  overflow-wrap: break-word;
 }
 
 #back-button {
@@ -27,13 +26,25 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .user-post-header-area {
-    height: 134px;
-  }
+.user-post-title {
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
 
+@media screen and (min-width: 768px) {
   #want-to-reply {
     font-size: 15px;
+  }
+
+  .user-post-title {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -42,11 +53,15 @@
     font-size: 15px;
   }
 
-  .user-post-header-area {
-    height: 170px;
-  }
-
   #want-to-reply {
     font-size: 18px;
+  }
+
+  .user-post-title {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }

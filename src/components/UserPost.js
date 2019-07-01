@@ -52,7 +52,8 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
-          <Link to={`/`}>
+          <p className="user-post-title">{this.props.location.state.title}</p>
+          <Link to={`/forums/${this.props.location.state.forumId}`}>
             <button id="back-button">Back</button>
           </Link>
         </div>
