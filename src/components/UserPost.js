@@ -8,13 +8,6 @@ import TokenService from "../services/token-service";
 import "./UserPost.css";
 
 export default class UserPost extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: ""
-    };
-  }
-
   static contextType = DoggyContext;
   render() {
     const { replies = [] } = this.context;

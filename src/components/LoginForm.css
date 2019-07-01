@@ -40,7 +40,7 @@
 
 #user-name-login-label,
 #password-login-label {
-  font-size: 8px;
+  font-size: 6px;
   font-weight: bolder;
 }
 
@@ -108,6 +108,11 @@
   }
   .login-form {
     padding-right: 10px;
+  }
+
+  #user-name-login-label,
+  #password-login-label {
+    font-size: 8px;
   }
 }
 
