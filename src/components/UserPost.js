@@ -8,6 +8,13 @@ import TokenService from "../services/token-service";
 import "./UserPost.css";
 
 export default class UserPost extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: ""
+    };
+  }
+
   static contextType = DoggyContext;
   render() {
     const { replies = [] } = this.context;
@@ -52,8 +59,8 @@ export default class UserPost extends React.Component {
     return (
       <div>
         <div className="user-post-header-area">
-          <p className="user-post-title">{this.props.location.state.title}</p>
-          <Link to={`/forums/${this.props.location.state.forumId}`}>
+          <p className="user-post-title">{this.props.location.title}</p>
+          <Link to={`/forums/${this.props.location.forumId}`}>
             <button id="back-button">Back</button>
           </Link>
         </div>

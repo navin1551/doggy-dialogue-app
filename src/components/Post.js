@@ -18,7 +18,8 @@ export default class Post extends React.Component {
           id="post-title-links"
           to={{
             pathname: `/post/${this.props.id}`,
-            state: { forumId: this.props.forumId, title: this.props.title }
+            forumId: this.props.forumId,
+            title: this.props.title
           }}
         >
           {this.props.title}
