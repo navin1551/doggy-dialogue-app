@@ -155,8 +155,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  #new-thread-button {
+  #forum-new-thread-button {
     left: 25px;
-    bottom: 2px;
   }
 }

@@ -156,3 +156,10 @@ h2 {
     margin-right: 40px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  #new-thread-button {
+    top: 12px;
+    left: 9.5%;
+  }
+}
