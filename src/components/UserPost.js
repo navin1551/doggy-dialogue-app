@@ -32,28 +32,30 @@ export default class UserPost extends React.Component {
           return null;
         })
       : null;
-    let content = this.context.posts.map(post => {
-      if (post.id === postId) {
-        return (
-          <Content
-            key={post.id}
-            id={post.id}
-            content={post.content}
-            modified={post.date_created}
-            title={post.title}
-            forumId={post.forumid}
-            userName={post.user_name}
-          />
-        );
-      } else {
-        return null;
-      }
-    });
+
+    const post = this.context.posts.find(post => post.id === postId);
+
+    if (!post) {
+      return "url is invalid";
+    }
+
+    const content = (
+      <Content
+        key={post.id}
+        id={post.id}
+        content={post.content}
+        modified={post.date_created}
+        title={post.title}
+        forumId={post.forumid}
+        userName={post.user_name}
+      />
+    );
+
     return (
       <div>
         <div className="user-post-header-area">
-          <p className="user-post-title">{this.props.location.title}</p>
-          <Link to={`/forums/${this.props.location.forumId}`}>
+          <p className="user-post-title">{post.title}</p>
+          <Link to={`/forums/${post.forumid}`}>
             <button id="back-button">Back</button>
           </Link>
         </div>
