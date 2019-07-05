@@ -51,17 +51,12 @@
   padding-top: 5px;
 }
 
-.alert-area {
-  position: relative;
-}
-
 .red {
-  position: absolute;
-  bottom: 85px;
-  right: 0;
   color: red;
   font-size: 3px;
   font-weight: bold;
+  margin-right: 100px;
+  position: relative;
 }
 
 #woof {
@@ -95,9 +90,8 @@
   }
 
   .red {
-    bottom: 95px;
-    right: 15px;
     font-size: 10px;
+    bottom: 10px;
   }
 
   #woof {
@@ -156,8 +150,8 @@
   }
 
   .red {
-    bottom: 120px;
-    right: 25px;
+    right: 35px;
+    bottom: 5px;
     font-size: 15px;
   }
 
