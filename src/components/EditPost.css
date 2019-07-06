@@ -3,12 +3,14 @@
   border: 1px solid black;
   width: 100px;
   background-color: darkgrey;
+  -webkit-appearance: none;
 }
 
 #edit-post-cancel-button {
   border: 1px solid black;
   width: 100px;
   background-color: darkgrey;
+  -webkit-appearance: none;
 }
 
 .edit-post-form {

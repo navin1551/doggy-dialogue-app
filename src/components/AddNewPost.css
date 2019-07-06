@@ -19,6 +19,7 @@
   margin-top: 15px;
   width: 65px;
   background-color: darkgrey;
+  -webkit-appearance: none;
 }
 
 #new-post-cancel-button {
@@ -28,6 +29,7 @@
   bottom: 0px;
   width: 65px;
   background-color: darkgrey;
+  -webkit-appearance: none;
 }
 
 .new-post-cancel-button-area {

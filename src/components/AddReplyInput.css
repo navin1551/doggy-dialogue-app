@@ -13,6 +13,7 @@
 #reply-button {
   border: 1px solid black;
   background-color: darkgrey;
+  -webkit-appearance: none;
 }
 
 @media screen and (min-width: 768px) {
