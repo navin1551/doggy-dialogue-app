@@ -12,6 +12,7 @@ input {
 .sign-up-button {
   border: 1px solid black;
   -webkit-appearance: none;
+  background-color: darkgrey;
 }
 
 .register-label {
