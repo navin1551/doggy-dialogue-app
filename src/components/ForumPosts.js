@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 import "./ForumPosts.css";
 import DoggyContext from "../DoggyContext";
 import TokenService from "../services/token-service";
 import Post from "./Post";
 
-export default class ForumPosts extends React.Component {
+class ForumPosts extends React.Component {
   static contextType = DoggyContext;
 
   render() {
@@ -51,3 +52,5 @@ export default class ForumPosts extends React.Component {
     );
   }
 }
+
+export default withRouter(ForumPosts);

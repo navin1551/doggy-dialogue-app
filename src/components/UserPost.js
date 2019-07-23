@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 import DoggyContext from "../DoggyContext";
 import Replies from "./Replies";
 import Content from "./Content";
@@ -7,7 +8,7 @@ import AddReplyInput from "./AddReplyInput";
 import TokenService from "../services/token-service";
 import "./UserPost.css";
 
-export default class UserPost extends React.Component {
+class UserPost extends React.Component {
   static contextType = DoggyContext;
   render() {
     const { replies = [] } = this.context;
@@ -72,3 +73,5 @@ export default class UserPost extends React.Component {
     );
   }
 }
+
+export default withRouter(UserPost);

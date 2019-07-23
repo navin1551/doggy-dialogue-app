@@ -1,9 +1,10 @@
 import React from "react";
 import config from "../config";
 import DoggyContext from "../DoggyContext";
+import { withRouter } from "react-router";
 import "./EditPost.css";
 
-export default class EditPost extends React.Component {
+class EditPost extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -139,3 +140,5 @@ export default class EditPost extends React.Component {
     );
   }
 }
+
+export default withRouter(EditPost);

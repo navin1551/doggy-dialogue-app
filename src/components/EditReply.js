@@ -1,9 +1,10 @@
 import React from "react";
 import config from "../config";
 import DoggyContext from "../DoggyContext";
+import { withRouter } from "react-router";
 import "./EditReply.css";
 
-export default class EditReply extends React.Component {
+class EditReply extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -129,3 +130,5 @@ export default class EditReply extends React.Component {
     );
   }
 }
+
+export default withRouter(EditReply);
